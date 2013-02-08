@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class TestBean {
 	String stringField;
 	TestEnum enumField;
-	
+	//asdasd
 	
 	public TestBean() {
 		stringField = "asd";
