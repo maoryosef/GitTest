@@ -25,8 +25,7 @@ public class TestView {
     CourseJDBCTemplate jdbcTemplate;
 
     @GET
-    @Path("/All")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public List<Course> getAll() {
         return jdbcTemplate.listCourses();
     }

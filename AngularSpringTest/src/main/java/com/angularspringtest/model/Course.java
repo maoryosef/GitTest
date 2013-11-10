@@ -2,7 +2,7 @@ package com.angularspringtest.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name="Course")
+@XmlRootElement
 public class Course {
 	String name;
 	Integer id;
