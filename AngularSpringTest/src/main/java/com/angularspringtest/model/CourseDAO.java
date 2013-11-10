@@ -11,7 +11,7 @@ public interface CourseDAO {
 	   
 	   public Course getCourse(Integer id);
 	   
-	   public List<Course> listCourses();
+	   public List<Course> listCourses(String query, String sort, boolean desc);
 	   
 	   public void delete(Integer id);
 	   

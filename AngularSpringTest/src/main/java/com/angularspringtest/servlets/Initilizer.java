@@ -2,21 +2,11 @@ package com.angularspringtest.servlets;
 
 import com.angularspringtest.model.Course;
 import com.angularspringtest.model.CourseJDBCTemplate;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-import org.springframework.core.io.Resource;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import org.springframework.web.context.support.ServletContextResource;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -65,11 +55,11 @@ public class Initilizer extends HttpServlet {
                 System.out.println("Table already exists");
             }
 
-            System.out.println("------Listing Multiple Records--------" );
+            /*System.out.println("------Listing Multiple Records--------" );
             List<Course> courses = jdbcTemplate.listCourses();
             for (Course record : courses) {
                 System.out.println(record.toString());
-            }
+            } */
         } catch(Exception e) {
             e.printStackTrace();
         }

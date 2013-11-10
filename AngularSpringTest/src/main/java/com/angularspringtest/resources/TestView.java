@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class TestView {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    public List<Course> getAll() {
-        return jdbcTemplate.listCourses();
+    public List<Course> getAll(@QueryParam("sort") String sort, @QueryParam("desc") Boolean desc) {
+        return jdbcTemplate.listCourses(null, sort, desc);
     }
 }

@@ -28,12 +28,24 @@ public class CourseJDBCTemplate implements CourseDAO {
       return course;
    }
 
-   public List<Course> listCourses() {
-      String SQL = "select * from Course";
-      List <Course> courses = jdbcTemplateObject.query(SQL, 
-                                new CourseMapper());
-      return courses;
-   }
+    @Override
+    public List<Course> listCourses(String query, String sort, boolean desc) {
+        String SQL = "SELECT * FROM Course WHERE 1=1";
+
+        if (query != null) {
+            SQL += " AND name LIKE '%" + query + "%'";
+        }
+
+        if (sort != null) {
+            SQL += " ORDER BY " + sort + " " + ((desc)?"DESC":"ASC");
+        }
+
+
+
+        List <Course> courses = jdbcTemplateObject.query(SQL,
+                new CourseMapper());
+        return courses;
+    }
 
    public void delete(Integer id){
       String SQL = "delete from Course where id = ?";

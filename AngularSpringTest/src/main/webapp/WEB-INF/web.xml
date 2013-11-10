@@ -16,7 +16,7 @@
         <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.angularspringtest.resources</param-value>
+            <param-value>com.angularspringtest.resources;org.codehaus.jackson.jaxrs</param-value>
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
