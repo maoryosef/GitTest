@@ -1,18 +1,19 @@
+<form class="form-search">
+    <div class="input-append">
+        <input type="text" ng-model="query" class="input-medium search-query" placeholder="Search">
+        <button ng-click="reset()" type="submit" class="btn"><i class="icon-search"></i></button>
+    </div>
+    <button ng-click="query=''; reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
+</form>
 <table class="table table-striped table-condensed table-hover">
     <thead>
-        <th>
-            <a ng-click="sort('id')">ID111</a>
-            <span ng-show="sort_order=='id' && is_desc == true"><i class="icon-arrow-down"></i></span>
-            <span ng-show="sort_order=='id' && is_desc == false"><i class="icon-arrow-up"></i></span>
-        </th>
-        <th fieldname="id" sortheader="ID"></th>
-        <th fieldname="name" sortheader="Name"></th>
-        <!--th>
-            <a ng-click="sort('name')">Name</a>
-            <span ng-show="sort_order=='name' && is_desc == true"><i class="icon-arrow-down"></i></span>
-            <span ng-show="sort_order=='name' && is_desc == false"><i class="icon-arrow-up"></i></span>
-
+        <!--th ng-repeat="col in cols">
+            <a ng-click="sort(col.name)">{{col.display}}</a>
+            <span ng-show="sort_order==col.name && is_desc == true"><i class="icon-arrow-down"></i></span>
+            <span ng-show="sort_order==col.name && is_desc == false"><i class="icon-arrow-up"></i></span>
         </th-->
+        <th sorted="id">ID</th>
+        <th sorted="name">Name</th>
     </thead>
     <tbody>
         <tr ng-repeat="item in items">
