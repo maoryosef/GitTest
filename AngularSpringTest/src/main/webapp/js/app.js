@@ -10,6 +10,8 @@ var CourseApp = angular.module("CourseApp", ["ngRoute", "ngResource"]).
     config(function($routeProvider) {
         $routeProvider.
             when('/', { controller: ListCtrl, templateUrl: 'list.html' }).
+            when('/new', {controller: EditCtrl, templateUrl: 'detail.html'}).
+            when('/edit/:itemId', {controller: EditCtrl, templateUrl: 'detail.html'}).
             otherwise({ redirectTo: '/' });
     })
     ;
@@ -26,13 +28,29 @@ CourseApp.directive('sorted', function() {
 
             $scope.do_sort = function() {
                 $scope.sort_by($scope.sort);
-                $scope.anotherFunc();
             };
 
             $scope.do_show = function(asc) {
                 return (asc != $scope.is_desc) && ($scope.sort_order == $scope.sort);
             };
         }
+    }
+});
+
+CourseApp.directive('controlGroup', function() {
+    return {
+        scope: true,
+        transclude: true,
+        template: '<div class="control-group" ng-class="err_class">' +
+            '<label class="control-label" for="{{field}}" ng-transclude></label>' +
+            '<div class="controls">' +
+            '<input type="text" ng-model="item.field" id="{{field}}">' +
+            '</div></div>',
+        controller: function($scope, $element, $attrs) {
+            console.log($attrs.controlGroup);
+            $scope.field = $attrs.controlGroup;
+            $scope.err_class = "{error: form." + $scope.field  + ".$invalid}";
+       }
     }
 });
 
@@ -46,6 +64,24 @@ CourseApp.factory('Courses', function($resource) {
         });
 });
 
+var EditCtrl = function($scope, $routeParams, $location, Courses) {
+    if ($routeParams.itemId !== undefined) {
+        $scope.item = Courses.get({ id: $routeParams.itemId });
+
+        $scope.save = function () {
+            Courses.update({id: $scope.item.id}, $scope.item, function () {
+                $location.path('/');
+            });
+        };
+    } else {
+        $scope.save = function () {
+            Courses.save($scope.item, function() {
+                $location.path('/');
+            });
+        };
+    }
+}
+
 var ListCtrl = function($scope, Courses) {
     $scope.search = function() {
         Courses.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc, limit: $scope.limit, offset: $scope.offset},
@@ -54,6 +90,13 @@ var ListCtrl = function($scope, Courses) {
                 $scope.no_more = cnt < 20;
                 $scope.items = $scope.items.concat(items);
             });
+    }
+
+    $scope.delete = function() {
+        var itemId = this.item.id;
+        Courses.delete({id: itemId}, function() {
+            $("#item_" + itemId).fadeOut();
+        })
     }
 
     $scope.sort_by = function(col) {
@@ -74,10 +117,6 @@ var ListCtrl = function($scope, Courses) {
 
         $scope.search();
     };
-
-    $scope.anotherFunc = function() {
-        console.log("success");
-    }
 
     $scope.sort_order = "name";
     $scope.is_desc = false;

@@ -62,7 +62,7 @@ public class CourseJDBCTemplate implements CourseDAO {
 
     @Override
     public void update(Integer id, Course course){
-      String SQL = "update Student set name = ?, startDate = ? where id = ?";
+      String SQL = "update Course set name = ?, startDate = ? where id = ?";
       jdbcTemplateObject.update(SQL, course.getName(), course.getStartDate(), id);
       System.out.println("Updated Record with ID = " + id );
    }
