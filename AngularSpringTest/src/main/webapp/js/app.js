@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var CourseApp = angular.module("CourseApp", ["ngRoute", "ngResource"]).
+var CourseApp = angular.module("CourseApp", ["ngRoute", "ngResource", "ui.bootstrap"]).
     config(function($routeProvider) {
         $routeProvider.
             when('/', { controller: ListCtrl, templateUrl: 'list.html' }).
@@ -82,7 +82,35 @@ var EditCtrl = function($scope, $routeParams, $location, Courses) {
     }
 }
 
-var ListCtrl = function($scope, Courses) {
+var EditCtrlPopUp = function($scope, $modalInstance, Courses, itemId) {
+    console.log(itemId);
+    if (itemId !== undefined) {
+        $scope.item = Courses.get({ id: itemId });
+
+        $scope.save = function () {
+            Courses.update({id: $scope.item.id}, $scope.item, function () {
+                $modalInstance.close('Updated course with id: ' + $scope.item.id);
+            });
+        };
+
+        $scope.actionName = "Edit";
+    } else {
+        $scope.item = {name: '', startDate: ''};
+        $scope.save = function () {
+            Courses.save($scope.item, function() {
+                $modalInstance.close('Added new course');
+            });
+        };
+
+        $scope.actionName = "Add";
+    }
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+}
+
+var ListCtrl = function($scope, $modal, Courses) {
     $scope.search = function() {
         Courses.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc, limit: $scope.limit, offset: $scope.offset},
             function(items) {
@@ -97,6 +125,37 @@ var ListCtrl = function($scope, Courses) {
         Courses.delete({id: itemId}, function() {
             $("#item_" + itemId).fadeOut();
         })
+    }
+
+    $scope.edit = function() {
+        if (this.item !== undefined) {
+            var itemId = this.item.id;
+            console.log("Editing " + itemId);
+        } else {
+            console.log("Adding new course");
+        }
+
+        var modalInstance = $modal.open({
+            templateUrl: 'detail.html',
+            controller: EditCtrlPopUp,
+            resolve: {
+                itemId: function() {
+                    return itemId;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (message) {
+            $scope.alert = { type: 'success', msg: message };
+        });
+   }
+
+    $scope.closeAlert = function() {
+        $scope.alert = undefined;
+    }
+
+    $scope.showAlert = function() {
+        return $scope.alert !== undefined;
     }
 
     $scope.sort_by = function(col) {

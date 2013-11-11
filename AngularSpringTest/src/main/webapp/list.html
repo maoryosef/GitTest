@@ -1,3 +1,5 @@
+<h1>Courses</h1>
+<alert ng-show="showAlert()" type="alert.type" close="closeAlert()">{{alert.msg}}</alert>
 <form class="form-search">
     <div class="input-append">
         <input type="text" ng-model="query" class="input-medium search-query" placeholder="Search">
@@ -15,7 +17,7 @@
         <th sorted="id">ID</th>
         <th sorted="name">Name</th>
         <th sorted="startDate">Start Date</th>
-        <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+        <th><a ng-click="edit()"><i class="icon-plus-sign"></i></a></th>
     </thead>
     <tbody>
         <tr ng-repeat="item in items" id="item_{{item.id}}">
@@ -23,7 +25,10 @@
             <td>{{item.name}}</td>
             <td>{{item.startDate | date:'medium'}}</td>
             <td>
-                <a href="#/edit/{{item.id}}">
+                <!--a href="#/edit/{{item.id}}">
+                    <i class="icon-edit"></i>
+                </a-->
+                <a ng-click="edit()">
                     <i class="icon-edit"></i>
                 </a>
                 <a ng-click="delete()">
