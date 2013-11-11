@@ -14,11 +14,15 @@
         </th-->
         <th sorted="id">ID</th>
         <th sorted="name">Name</th>
+        <th sorted="startDate">Start Date</th>
     </thead>
     <tbody>
         <tr ng-repeat="item in items">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
+            <td>{{item.startDate | date:'medium'}}</td>
         </tr>
     </tbody>
 </table>
+
+<a href="" ng-click = "offset = offset + limit; search()"  ng-show ="show_more()">Show more</a>

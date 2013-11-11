@@ -13,12 +13,12 @@ public class CourseJDBCTemplate implements CourseDAO {
       this.jdbcTemplateObject = new JdbcTemplate(dataSource);
    }
 
-   public void create(String name) {
-      String SQL = "insert into Course (name) values (?)";
-      
-      jdbcTemplateObject.update( SQL, name);
-      System.out.println("Created Record Name = " + name);
-      return;
+    @Override
+    public void create(Course course) {
+      String SQL = "insert into Course (name, startDate) values (?,?)";
+
+      jdbcTemplateObject.update( SQL, course.getName(), course.getStartDate());
+      System.out.println("Created Record = " + course.toString());
    }
 
    public Course getCourse(Integer id) {
@@ -29,7 +29,7 @@ public class CourseJDBCTemplate implements CourseDAO {
    }
 
     @Override
-    public List<Course> listCourses(String query, String sort, boolean desc) {
+    public List<Course> listCourses(String query, String sort, boolean desc, Integer limit, Integer offset) {
         String SQL = "SELECT * FROM Course WHERE 1=1";
 
         if (query != null) {
@@ -40,7 +40,13 @@ public class CourseJDBCTemplate implements CourseDAO {
             SQL += " ORDER BY " + sort + " " + ((desc)?"DESC":"ASC");
         }
 
+        if (offset != null && offset > 0) {
+            SQL += " OFFSET " + offset + " ROWS";
+        }
 
+        if (limit != null) {
+            SQL += " FETCH NEXT " + limit + " ROWS ONLY";
+        }
 
         List <Course> courses = jdbcTemplateObject.query(SQL,
                 new CourseMapper());
@@ -54,11 +60,11 @@ public class CourseJDBCTemplate implements CourseDAO {
       return;
    }
 
-   public void update(Integer id, String name){
-      String SQL = "update Student set name = ? where id = ?";
-      jdbcTemplateObject.update(SQL, name, id);
+    @Override
+    public void update(Integer id, Course course){
+      String SQL = "update Student set name = ?, startDate = ? where id = ?";
+      jdbcTemplateObject.update(SQL, course.getName(), course.getStartDate(), id);
       System.out.println("Updated Record with ID = " + id );
-      return;
    }
 
    @Override

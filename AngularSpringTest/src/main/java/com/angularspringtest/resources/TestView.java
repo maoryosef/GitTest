@@ -27,7 +27,9 @@ public class TestView {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    public List<Course> getAll(@QueryParam("q") String query, @QueryParam("sort") String sort, @QueryParam("desc") Boolean desc) {
-        return jdbcTemplate.listCourses(query, sort, desc != null ? desc : false);
+    public List<Course> getAll(@QueryParam("q") String query, @QueryParam("sort") String sort,
+                               @QueryParam("desc") Boolean desc, @QueryParam("limit") Integer limit,
+                               @QueryParam("offset") Integer offset) {
+        return jdbcTemplate.listCourses(query, sort, desc != null ? desc : false, limit, offset);
     }
 }

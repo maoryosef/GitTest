@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -40,17 +41,18 @@ public class Initilizer extends HttpServlet {
             String createTableSQL = "CREATE TABLE Course(\n";
             createTableSQL += "ID INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1000, INCREMENT BY 1),\n";
             createTableSQL += "NAME VARCHAR(20) NOT NULL,\n";
+            createTableSQL += "STARTDATE DATE ,\n";
             createTableSQL += "PRIMARY KEY (ID))";
 
             try {
                 jdbcTemplate.execute(createTableSQL);
-                jdbcTemplate.create("course1");
-                jdbcTemplate.create("course2");
-                jdbcTemplate.create("course3");
-                jdbcTemplate.create("course4");
-                jdbcTemplate.create("course5");
-                jdbcTemplate.create("course6");
-
+                jdbcTemplate.create(new Course("course1", new Date(System.currentTimeMillis() + 50000)));
+                jdbcTemplate.create(new Course("course2", new Date(System.currentTimeMillis() + 60000)));
+                jdbcTemplate.create(new Course("course3", new Date(System.currentTimeMillis() + 70000)));
+                jdbcTemplate.create(new Course("course4", new Date(System.currentTimeMillis() + 80000)));
+                jdbcTemplate.create(new Course("course5", new Date(System.currentTimeMillis() + 90000)));
+                jdbcTemplate.create(new Course("course6", new Date(System.currentTimeMillis() + 100000)));
+                jdbcTemplate.create(new Course("course7", new Date(System.currentTimeMillis() + 110000)));
             } catch (DataIntegrityViolationException e) {
                 System.out.println("Table already exists");
             }

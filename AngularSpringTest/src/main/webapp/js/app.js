@@ -19,8 +19,8 @@ CourseApp.directive('sorted', function() {
         scope: true,
         transclude: true,
         template: '<a ng-click="do_sort()" ng-transclude></a>' +
-            '<span ng-show="do_show(true)"><i class="icon-arrow-down"></i></span>' +
-            '<span ng-show="(false != is_desc) && (sort_order == sort)"><i class="icon-arrow-up"></i></span>',
+            '<span ng-show="do_show(false)"><i class="icon-arrow-down"></i></span>' +
+            '<span ng-show="(true != is_desc) && (sort_order == sort)"><i class="icon-arrow-up"></i></span>',
         controller: function($scope, $element, $attrs) {
             $scope.sort = $attrs.sorted;
 
@@ -48,8 +48,10 @@ CourseApp.factory('Courses', function($resource) {
 
 var ListCtrl = function($scope, Courses) {
     $scope.search = function() {
-        Courses.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc},
+        Courses.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc, limit: $scope.limit, offset: $scope.offset},
             function(items) {
+                var cnt = items.length;
+                $scope.no_more = cnt < 20;
                 $scope.items = $scope.items.concat(items);
             });
     }
@@ -67,6 +69,8 @@ var ListCtrl = function($scope, Courses) {
 
     $scope.reset = function() {
         $scope.items = [];
+        $scope.limit = 20;
+        $scope.offset = 0;
 
         $scope.search();
     };
@@ -77,6 +81,10 @@ var ListCtrl = function($scope, Courses) {
 
     $scope.sort_order = "name";
     $scope.is_desc = false;
+
+    $scope.show_more = function() {
+        return !$scope.no_more;
+    }
 
     /*$scope.cols = new Array();
     $scope.cols[0] = {name: 'id', display: 'ID'};

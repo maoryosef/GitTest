@@ -9,6 +9,7 @@ public class CourseMapper implements RowMapper<Course> {
       Course course = new Course();
       course.setId(rs.getInt("ID"));
       course.setName(rs.getString("NAME"));
+      course.setStartDate(rs.getTimestamp("STARTDATE"));
 
       return course;
    }

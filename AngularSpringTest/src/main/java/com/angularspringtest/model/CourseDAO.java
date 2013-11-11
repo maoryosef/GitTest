@@ -7,15 +7,15 @@ import javax.sql.DataSource;
 public interface CourseDAO {
 	   public void setDataSource(DataSource ds);
 
-	   public void create(String name);
+	   public void create(Course course);
 	   
 	   public Course getCourse(Integer id);
 	   
-	   public List<Course> listCourses(String query, String sort, boolean desc);
+	   public List<Course> listCourses(String query, String sort, boolean desc, Integer limit, Integer offset);
 	   
 	   public void delete(Integer id);
 	   
-	   public void update(Integer id, String name);
+	   public void update(Integer id, Course course);
 	   
 	   public void execute(String sql);
 }
