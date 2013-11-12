@@ -32,9 +32,12 @@ public class TestView {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void create(Course course){
+    @Produces(MediaType.APPLICATION_JSON)
+    public String create(Course course){
         System.out.println(course.toString());
-        jdbcTemplate.create(course);
+        Integer id = jdbcTemplate.create(course);
+
+        return "{\"id\": \"" + id + "\"}";
     }
 
     @GET

@@ -1,24 +1,36 @@
 package com.angularspringtest.model;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 public class CourseJDBCTemplate implements CourseDAO {
    private DataSource dataSource;
    private JdbcTemplate jdbcTemplateObject;
+   private SimpleJdbcInsert jdbcInsertor;
+
+
    
    public void setDataSource(DataSource dataSource) {
       this.dataSource = dataSource;
       this.jdbcTemplateObject = new JdbcTemplate(dataSource);
+      this.jdbcInsertor = new SimpleJdbcInsert(dataSource).withTableName("Course").usingGeneratedKeyColumns("id");
    }
 
     @Override
-    public void create(Course course) {
-      String SQL = "insert into Course (name, startDate) values (?,?)";
+    public Integer create(Course course) {
+      Map<String, Object> parameters = new HashMap<String, Object>(2);
+      parameters.put("name", course.getName());
+      parameters.put("startDate", course.getStartDate());
+      Number newId = jdbcInsertor.executeAndReturnKey(parameters);
 
-      jdbcTemplateObject.update( SQL, course.getName(), course.getStartDate());
       System.out.println("Created Record = " + course.toString());
+      System.out.println("Created RetVal = " + newId);
+
+      return newId.intValue();
    }
 
    public Course getCourse(Integer id) {

@@ -7,7 +7,7 @@ import javax.sql.DataSource;
 public interface CourseDAO {
 	   public void setDataSource(DataSource ds);
 
-	   public void create(Course course);
+	   public Integer create(Course course);
 	   
 	   public Course getCourse(Integer id);
 	   
