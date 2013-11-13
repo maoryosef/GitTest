@@ -60,7 +60,8 @@ CourseApp.factory('Courses', function($resource) {
         query:  {   method: 'GET',
                     isArray:true,
                     headers:{'Accept':'application/json'}
-        }
+        },
+        DeleteMulti: { method: 'POST', url: '/api/Test/DeleteMulti'}
         });
 });
 

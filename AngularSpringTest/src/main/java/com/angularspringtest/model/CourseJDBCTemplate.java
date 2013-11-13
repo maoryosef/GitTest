@@ -1,10 +1,12 @@
 package com.angularspringtest.model;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 public class CourseJDBCTemplate implements CourseDAO {
@@ -71,6 +73,13 @@ public class CourseJDBCTemplate implements CourseDAO {
       System.out.println("Deleted Record with ID = " + id );
       return;
    }
+
+    @Override
+    public void deleteMulti(List<Integer> ids) {
+        String SQL = String.format("delete from Course where id IN (%s)", ids.toString().replace('[', ' ').replace(']',' '));
+        jdbcTemplateObject.update(SQL);
+        System.out.println("Deleted Records with ID = " + ids );
+    }
 
     @Override
     public void update(Integer id, Course course){

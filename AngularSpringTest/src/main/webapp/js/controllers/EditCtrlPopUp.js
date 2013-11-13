@@ -16,7 +16,7 @@ var EditCtrlPopUp = function($scope, $modalInstance, Courses, itemId) {
         $scope.save = function () {
             Courses.save($scope.item, function(res) {
                 $scope.item.id = res.id;
-                var data = {message: 'Added new course', is_new: true, course: $scope.item}
+                var data = {message: 'Added new course (' + $scope.item.id + ')', is_new: true, course: $scope.item}
                 $modalInstance.close(data);
             });
         };

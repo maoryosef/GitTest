@@ -47,10 +47,10 @@ var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
                 $animate.enabled(false);
                 $scope.items[itemIndex] = data.course;
                 //if enabling animations right away, it will display both animation once item is changed
-                $timeout(function() {$animate.enabled(true); console.log("enabled")}, 1);
+                $timeout(function() {$animate.enabled(true); }, 1);
             }
 
-            $scope.setAlert({ type: 'success', msg: data.message });
+            $scope.setAlert({ type: 'info', msg: data.message });
         });
     }
 
@@ -100,6 +100,64 @@ var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
         return !$scope.no_more;
     }
 
+    $scope.isCourseMarked = function() {
+        return $scope.markedCourses.indexOf(this.item.id) > -1;
+    }
+
+    $scope.toggleCourseMarking = function() {
+        var index = $scope.markedCourses.indexOf(this.item.id);
+
+        if (index == -1) {
+            $scope.markedCourses.push(this.item.id);
+        } else {
+            $scope.markedCourses.splice(index, 1);
+        }
+    }
+
+    $scope.toggleMarkAll = function() {
+        $scope.markedCourses = [];
+        if (!$scope.isAllMarked()) {
+            for (i = 0; i < $scope.items.length; i++) {
+                $scope.markedCourses.push($scope.items[i].id);
+            }
+        }
+    }
+
+    $scope.isAllMarked = function() {
+        return $scope.markedCourses.length == $scope.items.length;
+    }
+
+    $scope.deleteSelected = function() {
+        Courses.DeleteMulti({ids: $scope.markedCourses}, function() {
+            for (i = 0; i < $scope.items.length; i++) {
+                if ($scope.markedCourses.indexOf($scope.items[i].id) > -1){
+                    $scope.items.splice(i, 1);
+                    i--;
+                }
+            }
+
+            $scope.markedCourses = [];
+            $scope.setAlert({ type: 'success', msg: 'Items deleted' });
+        }, function() {
+            $scope.setAlert({ type: 'error', msg: 'Failed deleting items' });
+        })
+    }
+
+    $scope.$watch('items.length == 0', function(newValue, oldValue) {
+        console.log("old: " + oldValue + ", new: " + newValue);
+        if (oldValue == false && newValue == true) {
+            $scope.getMore();
+        }
+
+        console.log("done");
+    })
+
+    $scope.getMore = function() {
+        $scope.offset = $scope.offset + $scope.limit;
+        $scope.search();
+    }
+
+    $scope.markedCourses = [];
     /*$scope.cols = new Array();
      $scope.cols[0] = {name: 'id', display: 'ID'};
      $scope.cols[1] = {name: 'name', display: 'Name'};*/

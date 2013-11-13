@@ -1,6 +1,7 @@
 package com.angularspringtest.resources;
 
 import com.angularspringtest.model.Course;
+import com.angularspringtest.model.CourseIDsBean;
 import com.angularspringtest.model.CourseJDBCTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -58,5 +59,11 @@ public class TestView {
     @Path("/{ID}")
     public void deleteCourse(@PathParam("ID") Integer id) {
         jdbcTemplate.delete(id);
+    }
+
+    @POST
+    @Path("/DeleteMulti")
+    public void deleteMulti(CourseIDsBean idList) {
+        jdbcTemplate.deleteMulti(idList.getIds());
     }
 }

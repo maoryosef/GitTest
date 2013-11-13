@@ -14,10 +14,10 @@
     animation: fadeInLeft 1s;
 }
 .course-item.ng-leave{
-    -webkit-animation: bounceOut 1s;
-    -moz-animation: bounceOut 1s;
-    -ms-animation: bounceOut 1s;
-    animation: bounceOut 1s;
+    -webkit-animation: bounceOut 0.5s;
+    -moz-animation: bounceOut 0.5s;
+    -ms-animation: bounceOut 0.5s;
+    animation: bounceOut 0.5s;
 }
 
 /*.alert {
@@ -42,10 +42,22 @@
 }
 
 .alert.ng-hide {
-    -webkit-animation: bounceOut 0.5s;
-    -moz-animation: bounceOut 0.5s;
-    -ms-animation: bounceOut 0.5s;
-    animation: bounceOut 0.5s;
+    -webkit-animation: bounceOut 0.4s;
+    -moz-animation: bounceOut 0.4s;
+    -ms-animation: bounceOut 0.4s;
+    animation: bounceOut 0.4s;
     opacity: 0;
 }
+
+.alert-wrapper-container {
+    position:relative;
+}
+.alert-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.9;
+}
+
+
 

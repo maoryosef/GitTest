@@ -14,7 +14,9 @@ public interface CourseDAO {
 	   public List<Course> listCourses(String query, String sort, boolean desc, Integer limit, Integer offset);
 	   
 	   public void delete(Integer id);
-	   
+
+	   public void deleteMulti(List<Integer> ids);
+
 	   public void update(Integer id, Course course);
 	   
 	   public void execute(String sql);
