@@ -9,6 +9,7 @@
     </div>
     <button ng-click="query=''; reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
 </form>
+
 <table class="table table-striped table-condensed table-hover">
     <thead>
         <!--th ng-repeat="col in cols">
@@ -22,20 +23,23 @@
         <th><a ng-click="edit()"><i class="icon-plus-sign"></i></a></th>
     </thead>
     <tbody>
-        <tr ng-repeat="item in items" id="item_{{item.id}}" ng-class="{'course-item':!animation_disabled}">
+        <tr ng-repeat="item in items" id="item_{{item.id}}" class="course-item">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
             <td>{{item.startDate | date:'medium'}}</td>
             <td>
-                <!--a href="#/edit/{{item.id}}">
-                    <i class="icon-edit"></i>
-                </a-->
                 <a ng-click="edit()">
                     <i class="icon-edit"></i>
                 </a>
-                <a ng-click="delete()">
-                    <i class="icon-remove"></i>
-                </a>
+                <span class="dropdown" >
+                    <a class="dropdown-toggle">
+                        <i class="icon-remove"></i>
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li><a class="btn btn-danger" ng-click="delete()">Delete</a></li>
+                        <li><a class="btn">Cancel</a></li>
+                    </ul>
+                </span>
             </td>
         </tr>
     </tbody>
