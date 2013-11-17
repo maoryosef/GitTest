@@ -59,5 +59,25 @@
     opacity: 0.9;
 }
 
+.fade-anim {
+    transition:opacity linear 0.4s;
+    -webkit-animation: bounceIn 0.4s;
+    -moz-animation: bounceIn 0.4s;
+    -ms-animation: bounceIn 0.4s;
+    animation: bounceIn 0.4s;
+    opacity:1;
+}
 
+.fade-anim.ng-hide-remove,
+.fade-anim.ng-hide-add{
+    display:inline !important;
+}
 
+.fade-anim.ng-hide {
+    transition:opacity linear 0.4s;
+    -webkit-animation: bounceOut 0.4s;
+    -moz-animation: bounceOut 0.4s;
+    -ms-animation: bounceOut 0.4s;
+    animation: bounceOut 0.4s;
+    opacity:0;
+}
