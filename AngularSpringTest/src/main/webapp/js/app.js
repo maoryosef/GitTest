@@ -22,7 +22,8 @@ CourseApp.directive('sorted', function() {
         transclude: true,
         template: '<a ng-click="do_sort()" ng-transclude></a>' +
             '<span ng-show="do_show(false)"><i class="icon-arrow-down"></i></span>' +
-            '<span ng-show="(true != is_desc) && (sort_order == sort)"><i class="icon-arrow-up"></i></span>',
+            '<span ng-show="(true != is_desc) && (sort_order == sort)"><i class="icon-arrow-up"></i></span>' +
+            '<span><i class="icon-filter"></i></span>',
         controller: function($scope, $element, $attrs) {
             $scope.sort = $attrs.sorted;
 
@@ -34,6 +35,16 @@ CourseApp.directive('sorted', function() {
                 return (asc != $scope.is_desc) && ($scope.sort_order == $scope.sort);
             };
         }
+    }
+});
+CourseApp.directive('deleteAll', function() {
+    return {
+        template: '<span class="dropdown">' +
+            '<button class="btn btn-danger dropdown-toggle" ng-show="markedCourses.length > 0">Delete selected</button>' +
+            '<ul class="dropdown-menu" >' +
+            '<li><a class="btn btn-danger" ng-click="deleteSelected()">Confirm</a></li>' +
+            '<li><a class="btn">Cancel</a></li>' +
+            '</ul></span>'
     }
 });
 
