@@ -115,8 +115,9 @@ var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
     }
 
     $scope.toggleMarkAll = function() {
+        var allMarked = $scope.isAllMarked();
         $scope.markedCourses = [];
-        if (!$scope.isAllMarked()) {
+        if (!allMarked) {
             for (i = 0; i < $scope.items.length; i++) {
                 $scope.markedCourses.push($scope.items[i].id);
             }

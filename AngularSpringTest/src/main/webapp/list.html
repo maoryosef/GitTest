@@ -10,8 +10,8 @@
         <button ng-click="reset()" type="submit" class="btn"><i class="icon-search"></i></button>
     </div>
     <button ng-click="query=''; reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
+    <span delete-all/>
 </form>
-        <pre>{{markedCourses}}</pre>
 <table class="table table-striped table-condensed table-hover">
     <thead>
         <!--th ng-repeat="col in cols">
@@ -25,7 +25,6 @@
         <th sorted="startDate">Start Date</th>
         <th><a ng-click="edit()"><i class="icon-plus-sign"></i></a></th>
     </thead>
-    <label ng-repeat="fruitName in fruits">
     <tbody>
         <tr ng-repeat="item in items" id="item_{{item.id}}" class="course-item">
             <td><input type="checkbox" ng-checked="isCourseMarked()" ng-click="toggleCourseMarking()" /></td>
@@ -51,10 +50,4 @@
 </table>
 
 <a href="" ng-click = "getMore();"  ng-show ="show_more()">Show more</a> <br/>
-<span class="dropdown">
-    <button class="btn btn-danger dropdown-toggle" ng-show="markedCourses.length > 0">Delete selected</button>
-    <ul class="dropdown-menu" >
-        <li><a class="btn btn-danger" ng-click="deleteSelected()">Confirm</a></li>
-        <li><a class="btn">Cancel</a></li>
-    </ul>
-</span>
+<span delete-all />
