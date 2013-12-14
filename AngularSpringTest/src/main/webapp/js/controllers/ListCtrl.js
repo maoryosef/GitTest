@@ -117,7 +117,6 @@ var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
     $scope.toggleMarkAll = function() {
         var allMarked = $scope.isAllMarked();
         $scope.markedCourses = [];
-        if (!allMarked) {
 
         if (!allMarked) {
             for (i = 0; i < $scope.items.length; i++) {
