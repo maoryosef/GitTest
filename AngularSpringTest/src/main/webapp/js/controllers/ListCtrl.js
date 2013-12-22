@@ -1,6 +1,6 @@
-var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
+var ListCtrl = function($scope, $modal, $timeout, $animate, Tickets) {
     $scope.search = function() {
-        Courses.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc, limit: $scope.limit, offset: $scope.offset},
+        Tickets.query({q: $scope.query, sort: $scope.sort_order, desc: $scope.is_desc, limit: $scope.limit, offset: $scope.offset},
             function(items) {
                 var cnt = items.length;
                 $scope.no_more = cnt < 20;
@@ -13,7 +13,7 @@ var ListCtrl = function($scope, $modal, $timeout, $animate, Courses) {
     $scope.delete = function() {
         var itemId = this.item.id;
         var itemIndex = this.$index;
-        Courses.delete({id: itemId}, function() {
+        Tickets.delete({id: itemId}, function() {
             $scope.items.splice(itemIndex, 1);
             $scope.setAlert({ type: 'success', msg: 'Item deleted' });
         }, function() {

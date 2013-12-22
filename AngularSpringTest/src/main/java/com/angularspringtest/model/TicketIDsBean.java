@@ -11,7 +11,7 @@ import java.util.List;
  */
 
 @XmlRootElement
-public class CourseIDsBean {
+public class TicketIDsBean {
     List<Integer> ids;
 
     public List<Integer> getIds() {
@@ -24,7 +24,7 @@ public class CourseIDsBean {
 
     @Override
     public String toString() {
-        return "CourseIDsBean{" +
+        return "TicketIDsBean{" +
                 "ids=" + ids +
                 '}';
     }

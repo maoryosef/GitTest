@@ -54,7 +54,7 @@ CourseApp.directive('controlGroup', function() {
     }
 });
 
-CourseApp.factory('Courses', function($resource) {
+CourseApp.factory('Tickets', function($resource) {
     return $resource('/api/Test/:id', { id: '@id' }, {
         update: { method: 'PUT' },
         query:  {   method: 'GET',

@@ -1,15 +1,15 @@
-var EditCtrl = function($scope, $routeParams, $location, Courses) {
+var EditCtrl = function($scope, $routeParams, $location, Tickets) {
     if ($routeParams.itemId !== undefined) {
-        $scope.item = Courses.get({ id: $routeParams.itemId });
+        $scope.item = Tickets.get({ id: $routeParams.itemId });
 
         $scope.save = function () {
-            Courses.update({id: $scope.item.id}, $scope.item, function () {
+            Tickets.update({id: $scope.item.id}, $scope.item, function () {
                 $location.path('/');
             });
         };
     } else {
         $scope.save = function () {
-            Courses.save($scope.item, function() {
+            Tickets.save($scope.item, function() {
                 $location.path('/');
             });
         };

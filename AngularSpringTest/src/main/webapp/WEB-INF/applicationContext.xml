@@ -19,7 +19,7 @@
 
     <!-- Definition for studentJDBCTemplate bean -->
     <bean id="courseJDBCTemplate"
-          class="com.angularspringtest.model.CourseJDBCTemplate">
+          class="com.angularspringtest.model.TicketJDBCTemplate">
         <property name="dataSource" ref="dataSource" />
     </bean>
 </beans>

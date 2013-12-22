@@ -1,4 +1,4 @@
-<div style="text-align: center"><h1>{{actionName}} Course</h1></div>
+<div style="text-align: center"><h1>{{actionName}} Ticket</h1></div>
 <form name="form" class="form-horizontal">
     <div class="control-group" ng-class="{error: form.name.$invalid}">
         <label class="control-label" for="name">Name</label>
@@ -6,17 +6,29 @@
             <input type="text" ng-model="item.name" name="name" id="name" ng-required="true">
         </div>
     </div>
-    <div class="control-group" ng-class="{error: form.startDate.$invalid}">
-        <label class="control-label" for="startDate">Start Date</label>
+    <div class="control-group" ng-class="{error: form.description.$invalid}">
+        <label class="control-label" for="name">Description</label>
+        <div class="controls">
+            <input type="text" ng-model="item.description" name="description" id="description" ng-required="true">
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: form.refId.$invalid}">
+        <label class="control-label" for="refID">Ref ID</label>
+        <div class="controls">
+            <input type="text" ng-model="item.refID" name="name" id="refID">
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: form.openDate.$invalid}">
+        <label class="control-label" for="openDate">Open Date</label>
         <div class="controls">
             <!--input type="text" ng-model="item.startDate" id="startDate"-->
-            <input id="startDate" name="startDate" type="text" datepicker-popup="dd-MMMM-yyyy" ng-model="item.startDate" is-open="opened" max="'2015-06-22'" />
+            <input id="openDate" name="openDate" type="text" datepicker-popup="dd-MMMM-yyyy" ng-model="item.openDate" is-open="opened" max="'2015-06-22'" />
 
         </div>
     </div>
     <!--div control-group="name">Name</div-->
     <div class="form-actions">
-        <button class="btn btn-primary" ng-click="save()" ng-disabled="!form.name.$valid || !form.startDate.$valid">
+        <button class="btn btn-primary" ng-click="save()" ng-disabled="!form.name.$valid || !form.openDate.$valid || !form.description.$valid">
             Submit
         </button>
         <a ng-click="cancel()" class="btn">Cancel</a>

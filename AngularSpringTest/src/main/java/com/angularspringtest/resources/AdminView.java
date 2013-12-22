@@ -1,7 +1,7 @@
 package com.angularspringtest.resources;
 
-import com.angularspringtest.model.Course;
-import com.angularspringtest.model.CourseJDBCTemplate;
+import com.angularspringtest.model.Ticket;
+import com.angularspringtest.model.TicketJDBCTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +21,7 @@ import java.util.List;
 @Path("/Admin")
 public class AdminView {
     @Autowired
-    CourseJDBCTemplate jdbcTemplate;
+    TicketJDBCTemplate jdbcTemplate;
 
     @GET
     @Path("/Seed")
@@ -30,12 +30,14 @@ public class AdminView {
 
         try{
             System.out.println("Deleting db");
-            jdbcTemplate.execute("DROP TABLE Course");
+            jdbcTemplate.execute("DROP TABLE Ticket");
 
-            String createTableSQL = "CREATE TABLE Course(\n";
+            String createTableSQL = "CREATE TABLE Ticket(\n";
             createTableSQL += "ID INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1000, INCREMENT BY 1),\n";
-            createTableSQL += "NAME VARCHAR(20) NOT NULL,\n";
-            createTableSQL += "STARTDATE TIMESTAMP ,\n";
+            createTableSQL += "NAME VARCHAR(120) NOT NULL,\n";
+            createTableSQL += "DESCRIPTION CLOB NOT NULL,\n";
+            createTableSQL += "REF_ID VARCHAR(20),\n";
+            createTableSQL += "OPEN_DATE TIMESTAMP ,\n";
             createTableSQL += "PRIMARY KEY (ID))";
 
             System.out.println("Creating db...");
@@ -46,9 +48,9 @@ public class AdminView {
             System.out.println("Seeding " + numOfSeeds + " items");
 
             for (int i = 0; i < numOfSeeds; i++) {
-                long startDate = System.currentTimeMillis() + getRandomNum(10000, 800000000);
-                String courseName = "Course #" + (int)(getRandomNum(100, numOfSeeds));
-                jdbcTemplate.create(new Course(courseName, new Date(startDate)));
+                long openDate = System.currentTimeMillis() + getRandomNum(10000, 800000000);
+                String ticketName = "Ticket #" + (int)(getRandomNum(100, numOfSeeds));
+                jdbcTemplate.create(new Ticket(ticketName, null, ticketName,  new Date(openDate)));
             }
 
             message += " " + numOfSeeds;
