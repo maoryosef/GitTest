@@ -1,4 +1,4 @@
-<h1>Courses</h1>
+<h1>Tickets</h1>
 <div class="alert-wrapper-container">
     <div class="alert-wrapper">
         <alert ng-show="alert.show" type="alert.data.type" ng-click="closeAlert()">{{alert.data.msg}}</alert>
@@ -22,7 +22,9 @@
         <th><input type="checkbox" ng-checked="isAllMarked()" ng-click="toggleMarkAll()" /></th>
         <th sorted="id">ID</th>
         <th sorted="name">Name</th>
-        <th sorted="startDate">Start Date</th>
+        <th sorted="description">Description</th>
+        <th sorted="ref_Id">Ref ID</th>
+        <th sorted="open_Date">Open Date</th>
         <th><a ng-click="edit()"><i class="icon-plus-sign"></i></a></th>
     </thead>
     <label ng-repeat="fruitName in fruits">
@@ -31,7 +33,9 @@
             <td><input type="checkbox" ng-checked="isCourseMarked()" ng-click="toggleCourseMarking()" /></td>
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.startDate | date:'medium'}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.refID}}</td>
+            <td>{{item.openDate | date:'medium'}}</td>
             <td>
                 <a ng-click="edit()">
                     <i class="icon-edit"></i>

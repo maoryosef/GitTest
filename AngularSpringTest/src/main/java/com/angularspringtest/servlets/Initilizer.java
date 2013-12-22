@@ -1,7 +1,7 @@
 package com.angularspringtest.servlets;
 
-import com.angularspringtest.model.Course;
-import com.angularspringtest.model.CourseJDBCTemplate;
+import com.angularspringtest.model.Ticket;
+import com.angularspringtest.model.TicketJDBCTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,7 +22,7 @@ import java.util.List;
 public class Initilizer extends HttpServlet {
 
     @Autowired
-    CourseJDBCTemplate jdbcTemplate;
+    TicketJDBCTemplate jdbcTemplate;
 
     @Override
     public void init() throws ServletException {
@@ -38,21 +37,23 @@ public class Initilizer extends HttpServlet {
 
             CourseJDBCTemplate jdbcTemplate = bf.getBean("courseJDBCTemplate", CourseJDBCTemplate.class);
             */
-            String createTableSQL = "CREATE TABLE Course(\n";
+            String createTableSQL = "CREATE TABLE Ticket(\n";
             createTableSQL += "ID INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1000, INCREMENT BY 1),\n";
-            createTableSQL += "NAME VARCHAR(20) NOT NULL,\n";
-            createTableSQL += "STARTDATE DATE ,\n";
+            createTableSQL += "NAME VARCHAR(120) NOT NULL,\n";
+            createTableSQL += "DESCRIPTION CLOB NOT NULL,\n";
+            createTableSQL += "REF_ID VARCHAR(20),\n";
+            createTableSQL += "OPEN_DATE TIMESTAMP ,\n";
             createTableSQL += "PRIMARY KEY (ID))";
 
             try {
                 jdbcTemplate.execute(createTableSQL);
-                jdbcTemplate.create(new Course("course1", new Date(System.currentTimeMillis() + 50000)));
-                jdbcTemplate.create(new Course("course2", new Date(System.currentTimeMillis() + 60000)));
-                jdbcTemplate.create(new Course("course3", new Date(System.currentTimeMillis() + 70000)));
-                jdbcTemplate.create(new Course("course4", new Date(System.currentTimeMillis() + 80000)));
-                jdbcTemplate.create(new Course("course5", new Date(System.currentTimeMillis() + 90000)));
-                jdbcTemplate.create(new Course("course6", new Date(System.currentTimeMillis() + 100000)));
-                jdbcTemplate.create(new Course("course7", new Date(System.currentTimeMillis() + 110000)));
+                jdbcTemplate.create(new Ticket("ticket1", null, "ticket desc1", new Date(System.currentTimeMillis() + 50000)));
+                jdbcTemplate.create(new Ticket("ticket2", null, "ticket desc2", new Date(System.currentTimeMillis() + 60000)));
+                jdbcTemplate.create(new Ticket("ticket3", null, "ticket desc3", new Date(System.currentTimeMillis() + 70000)));
+                jdbcTemplate.create(new Ticket("ticket4", null, "ticket desc4", new Date(System.currentTimeMillis() + 80000)));
+                jdbcTemplate.create(new Ticket("ticket5", null, "ticket desc5", new Date(System.currentTimeMillis() + 90000)));
+                jdbcTemplate.create(new Ticket("ticket6", null, "ticket desc6", new Date(System.currentTimeMillis() + 100000)));
+                jdbcTemplate.create(new Ticket("ticket7", null, "ticket desc7", new Date(System.currentTimeMillis() + 110000)));
             } catch (DataIntegrityViolationException e) {
                 System.out.println("Table already exists");
             }
