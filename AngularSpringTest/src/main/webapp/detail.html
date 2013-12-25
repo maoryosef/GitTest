@@ -1,17 +1,19 @@
 <div style="text-align: center"><h1>{{actionName}} Ticket</h1></div>
 <form name="form" class="form-horizontal">
-    <div class="control-group" ng-class="{error: form.name.$invalid}">
-        <label class="control-label" for="name">Name</label>
+    <div class="control-group" ng-class="{error: form.ticktname.$invalid}">
+        <label class="control-label" for="ticktname">Name</label>
         <div class="controls">
-            <input type="text" ng-model="item.name" name="name" id="name" ng-required="true">
+            <input type="text" ng-model="item.name" name="ticktname" id="ticktname" ng-required="true">
         </div>
     </div>
+
     <div class="control-group" ng-class="{error: form.description.$invalid}">
-        <label class="control-label" for="name">Description</label>
+        <label class="control-label" for="description">Description</label>
         <div class="controls">
             <input type="text" ng-model="item.description" name="description" id="description" ng-required="true">
         </div>
     </div>
+
     <div class="control-group" ng-class="{error: form.refId.$invalid}">
         <label class="control-label" for="refID">Ref ID</label>
         <div class="controls">

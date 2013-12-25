@@ -12,7 +12,7 @@ var EditCtrlPopUp = function($scope, $modalInstance, Tickets, itemId) {
 
         $scope.actionName = "Edit";
     } else {
-        $scope.item = {name: '', openDate: ''};
+        $scope.item = {name: '', openDate: '', description: ''};
         $scope.save = function () {
             Tickets.save($scope.item, function(res) {
                 $scope.item.id = res.id;
