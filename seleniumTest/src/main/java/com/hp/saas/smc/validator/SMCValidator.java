@@ -36,10 +36,10 @@ public class SMCValidator implements PageValidator{
         logger.info("Trying to login");
         try {
             WebElement usernameField = m_WebDriver.findElement(By.xpath("//input[@name='user.id' or @name='var/user.id']"));
-            usernameField.sendKeys("saas_bpm_mon");
+            usernameField.sendKeys("");
 
             WebElement passwordField = m_WebDriver.findElement(By.xpath("//input[@type='password']"));
-            passwordField.sendKeys("123saas456");
+            passwordField.sendKeys("");
 
             WebElement loginButton = m_WebDriver.findElement(By.xpath("//input[(@type='button' and @value='Login') or (@type='submit' and @id='loginBtn')]"));
             loginButton.click();
