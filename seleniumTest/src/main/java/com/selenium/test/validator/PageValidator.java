@@ -1,4 +1,4 @@
-package com.hp.saas.smc.validator;
+package com.selenium.test.validator;
 
 /**
  * Created with IntelliJ IDEA.

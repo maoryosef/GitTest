@@ -1,7 +1,7 @@
-package com.hp.saas.smc;
+package com.selenium.test;
 
-import com.hp.saas.smc.validator.PageValidator;
-import com.hp.saas.smc.validator.SMCValidator;
+import com.selenium.test.validator.PageValidator;
+import com.selenium.test.validator.SMCValidator;
 import org.apache.log4j.Logger;
 
 public class Program {
@@ -11,6 +11,6 @@ public class Program {
         PageValidator pv = new SMCValidator();
 
         logger.info("Starting validation");
-        pv.runValidation("https://smlon20p.saas.hp.com/sm/index.do");
+        pv.runValidation("");
     }
 }

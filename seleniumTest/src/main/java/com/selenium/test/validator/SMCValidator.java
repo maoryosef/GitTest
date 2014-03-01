@@ -1,4 +1,4 @@
-package com.hp.saas.smc.validator;
+package com.selenium.test.validator;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
