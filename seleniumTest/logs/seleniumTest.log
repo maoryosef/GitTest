@@ -1,0 +1,838 @@
+[01/03/2014 20:25:48]--INFO -com.hp.saas.smc.Program:Starting validation
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session HTTP/1.1
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "POST /session HTTP/1.1[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "Content-Length: 143[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> POST /session HTTP/1.1
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> Content-Length: 143
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:25:58]--DEBUG-org.apache.http.wire: >> "{"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "Content-Length:552[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:<< Content-Length:552
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"userDataDir":"C:\\Users\\Maor\\AppData\\Local\\Temp\\scoped_dir9300_656"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"version":"33.0.1750.117","webStorageEnabled":true}}"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26024<->127.0.0.1:8089 shut down
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26024<->127.0.0.1:8089 closed
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:25:59]--INFO -com.hp.saas.smc.validator.SMCValidator:Opening https://smlon20p.saas.hp.com/sm/index.do
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/url HTTP/1.1
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/url HTTP/1.1[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "Content-Length: 50[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/url HTTP/1.1
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> Content-Length: 50
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:25:59]--DEBUG-org.apache.http.wire: >> "{"url":"https://smlon20p.saas.hp.com/sm/index.do"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26028<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26028<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--INFO -com.hp.saas.smc.validator.SMCValidator:Searching for the correct frame...
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Cache-Control: no-cache[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Cache-Control: no-cache
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:23041[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:23041
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":"\u003C!DOCTYPE html PUBLIC \"-//W3C//Dtd HTML 4.01 Transitional//EN\">\u003Chtml decorator=\"blank\">\u003Chead>\n    \u003Ctitle>HP Service Manager\u003C/title>\n\n    \n    \n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"/sm/cwc/css/cwc_defaults.css\">\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"/sm/cwc/css/cwc_dropmenu.css\">\n\n\n\n\n    \n    \u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"cwc/css/cwc_container.css\">\n    \n      \u003Cscript type=\"text/javascript\" src=\"js/boot.min.js\">\u003C/script>\n    \n    \u003Cscript type=\"text/javascript\">\n\n      var CWC_COOKIE     = \"CWCweb\";\n      var SEP_VALUE      = \":\";\n      var SEP_PROPERTIES = \"&\";\n\n      var applicationTitle = 'HP Service Manager';\n      var applicationShortName = '$__resource_not_found__$';\n      var applicationName = 'HP Service Manager';\n      var isUserAuthenticated = false;\n      var isAccessibleMode = false;\n      var isESSMode = false;\n      var isListDetailFW = false;\n      var isHelpOn = true;\n      var useTabTray = true;\n      var useButtonTray = true;\n      var useBreadCrumbTray = false;\n      var useBottomTray = false;\n      var useMessageTray = true;\n      var srcNavigation = 'cwc/cwc_navmenu.jsp';\n      var srcDetail = 'detail.do';\n      var srcOrigDetail = 'detail.do';\n      var frameworkContext = '/sm';\n      var loginRedirect = '';\n      var isLazyLoad = true;\n      var winList = new WindowList();\n      var collapseNavBranch = 'Collapse Branch ';\n      var expandNavBranch = 'Expand Branch ';\n      var printableDetailURI = \"\";\n      var printableDetailQuery = \"\";\n      var showPrint =  true;\n      var usePrintPreview = true;\n      var isNavResizable = true;\n      var navFrameWidth = 200;\n      var isFullScreenLoginOutUsed = false;\n      var logoutUrl =  frameworkContext + '/goodbye.jsp';\n      var logoutCleanupJsp =  frameworkContext + \"/cwc/logoutcleanup.jsp\";\n      var cwcloginredirectJsp = frameworkContext + \"/cwc/loginredirect.jsp\";\n      var loggedInUserName = 'anonymousUser';\n      var sessionHash = 'null'.replace(/[^\\w]/g,\"\");\n      var isStylesheetCopied = false;\n      var isUrlUpdateSkipped = true;\n\n      // needed to handle resize operations on the client side\n      var iTABheight = 25;\n      var iTTheight = 25;\n      var iBTheight = 25;\n      var iBCTheight = 25;\n      var iMGheight = 25;\n      var iBBheight = 25;\n      var iHeadHeight = 37;\n\n      var logoutMessage = '';\n      /* Need alt key for these to work */\n      var keySyncTree = '';                    // Synch the nav tree                Default is 'y' or 89\n      var keyCollapseExpandNav = '78'; // Collapse/Expand the Nav frame     Default is 'n' or 78\n      var keyMessages = '71';                     // Messages and Alerts               Default is 'g' or 71\n      var keyRefresh = '82';                       // Refresh                           Default is 'r' or 82\n      var keyPrint = '80';                           // Print                             Default is 'p' or 80\n      var keyAddBookmark = '';                  // Add bookmark                      Default is 'k' or 75\n      var keySpellCheck = '67';                // Spell check                       Default is 'c' or 67\n      var keyAbout = '79';                           // About Box                         Default is 'o' or 79\n      var keyLogout = '';                         // Logout                            Default is 'l' or 76\n      var keyManageFav = '49';                  // Manage favorites                  Default is '1' or 49\n      var keyAddFav = '50';                        // Add favorites                     Default is '2' or 50\n      /* works without additional key */\n      var keyHelpFunc = '';                    // Help                              Default is 'F1' or 112\n      var keyMagnifyFunc = '';              // Magnify                           Default is 'F2' or 113\n      var sMenuService = "
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "frameworkContext + \"/cwc/nav.menu\"; // servlet mapping for the servlet that populates the tree\n      \n      var isActiveTasksMenuUsed = false;\n      var sMenuAggregate = frameworkContext + \"/cwc/menu.aggregate.jsp\";\n      var sMenuShortcut = frameworkContext + \"/cwc/menu.shortcuts.jsp\";\n      var sMenuTool = frameworkContext + \"/cwc/menu.tools.jsp\";\n      var sMenuHelp = frameworkContext + \"/cwc/menu.help.jsp\";\n      var sMenuActiveTasks = frameworkContext + \"/cwc/menu.activeTasks.jsp\";\n      var NAVMENU_TASKS_CAPTION = \"Tasks\";\n      var NAVMENU_SHORTCUTS_CAPTION = \"Shortcuts\";\n      var NAVMENU_TOOLS_CAPTION = \"Tools\";\n      var NAVMENU_ACTIVE_TASKS_CAPTION = \"Active Tasks\";\n      var NAVMENU_HELP_CAPTION = \"Help\";\n      var NAVMENU_SKIP_NAV_LABEL = \"Skip over navigation\";\n      var NAVMENU_ADD_SHORTCUT = 'Add Shortcut';\n      var NAVMENU_SHORTCUT_RENAME = 'Rename';\n      var NAVMENU_SHORTCUT_DELETE = 'Delete';\n      var NAVMENU_SHORTCUT_MANAGE = 'Manage shortcut';\n      var NAVMENU_WORKSPACE = 'Workspace';\n      var NAVMENU_SUMMARY = 'Summary';\n      var strImagePath = frameworkContext + \"/cwc/tree/images/\";\n      var aggregated_apps = new Array();\n      var aggregated_nav = '';\n      var isDebug = false;\n      \n      var SKIPLINK_START = '\u003Ca class=\\\"cwcSkipLink\\\" href = \\\"javascript:cwcSkipNav(\\'{id}:cwc_SkipLink_end\\');\\\" id=\\\"{id}:cwc_SkipLink_start\\\" name=\\\"{id}:cwc_SkipLink_start\\\" title=\\\"{title}\\\">\u003Cimg alt=\\\"{title}\\\" title=\\\"{title}\\\" style=\\\"border:0px\\\" src=\\\"/sm/cwc/images/blank.gif\\\" width=\\\"1\\\" height=\\\"1\\\" />\u003C/a>';\n      var SKIPLINK_END = '\u003Ca class=\\\"cwcSkipLinkEnd\\\" href = \\\"#\\\" id=\\\"{id}:cwc_SkipLink_end\\\" name=\\\"{id}:cwc_SkipLink_end\\\" title=\\\"{title}\\\">\u003Cimg alt=\\\"{title}\\\" title=\\\"{title}\\\" style=\\\"border:0px\\\" src=\\\"/sm/cwc/images/blank.gif\\\" width=\\\"1\\\" height=\\\"1\\\" />\u003C/a>';\n    \u003C/script>\n    \n    \u003Cscript type=\"text/javascript\" src=\"js/cwc.min.js\">\u003C/script>\n    \u003Cscript type=\"text/javascript\" src=\"js/cwc.initfw.min.js\">\u003C/script>        \n    \n\n  \n    \n    \u003Cscript type=\"text/javascript\" src=\"js/objmove.min.js\">\u003C/script>\n        \n    \u003Cscript type=\"text/javascript\">\n    /* The vertical divider is moved on the horizontal axis */\n    moveObject = new Array(\"cwc_V\",\"h\");\n\n    /* objects to be resized by moveObject */\n    var fw_sna = \"cwc_sysnav\";\n    var fw_dta = \"cwc_detail\";\n    \u003C/script>\n  \n\n    \u003Cscript type=\"text/javascript\">\n      function doOnloads()\n      {\n        // order is everything - don't change it\n        initFW();\n        loadFrameContents();\n        prepLyr('cwc_threadtabs');\n        document.onkeyup = cwcKeyHandler;\n        document.onkeypress = stopEventForF1;\n        checkShowHideMasthead(\"anonymousUser\");\n       \n\n        if (typeof cwc.navmenu != 'undefined' && window.YAHOO)\n          YAHOO.util.Event.addListener(window, \"beforeunload\", cwc.navmenu.breadCrumb.saveCrumbs, cwc.navmenu.breadCrumb, true);\n        cwc.Dom.preLoadImages();\n      }\n\n      addLoadEvent(doOnloads);\n\n      cwc.AFCK_COOKIE_NAME =\"AFCK\";\n      cwc.UNIQPARAM      = \"__uniqparm\";\n\n\t  \n      var sessionTime = 900;\n      if (sessionTime > 0)\n      {\n        var isKeepAliveEnabled = false;\n        var extendSessionMsg = 'Your session will expire at {0}. Click OK to extend the session.';\n        var timeoutReminder = '180';\n\n        var cwcSessionTimer = new sessionTimer(window, sessionTime, timeoutReminder, extendSessionMsg, isKeepAliveEnabled);\n        cwcSessionTimer.start(isUserAuthenticated);\n      }\n    \u003C/script>\n\n    \n      \n      \n\n\n\n\u003Cscript type=\"text/javascript\">\n  function initHelp()\n  {\n    /* this need only be done once, globally */\n    \n        cwcSetHelpPage('http://SMLON"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "20P-01:80/help');\n    \n }\n  \n  function closeSessionOnUnload(e)\n  {\n    if (top.detail)\n    {\n      var closeSession = top.detail.tpzOnCloseSession;\n      if (closeSession)\n      {\n        closeSession();\n      }\n    }\n  }\n  \n  function setOnUnload()\n  {\n    window.onunload = closeSessionOnUnload;\n  }\n  \n  \n  function clearMessagesAndAlerts() {\n    /* Call the messages servlet, AJAX style */\n    var xmlhttp;\n    if (window.ActiveXObject){\n      xmlhttp = new ActiveXObject( \"MSXML2.XMLHttp.3.0\" );\n    }else{\n      xmlhttp = new XMLHttpRequest();\n      xmlhttp.overrideMimeType(\"text/xml\");\n    }\n\n    try{\n      xmlhttp.open(\"POST\", \"../servlet/messages?clear=true\", false);\n      xmlhttp.send(\"\");\n    }catch(e){\n    }\n  }\n  \n  /* instead of window.onload which would stomp a pre-existing setting */\n  addLoadEvent(initHelp);\n  \n  /* After the frames are loaded set the onunload of the document */\n  addLoadEvent(setOnUnload);\n\u003C/script>\n    \n  \u003C/head>\n\n\n  \u003C!--  Don't add any onload event to this element, use the doOnLoads method above. -->\n  \u003Cbody class=\"yui-skin-cwc\" onunload=\"closeAllWindows()\" style=\"cursor: auto;\">\n    \u003Cdiv id=\"cwc_glasspane\" style=\"position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 0; cursor: default;\">\n    \u003C/div>\n\n    \n      \n      \u003Cdiv id=\"cwc_fwHelp\" name=\"cwc_fwHelp\" style=\"display:none; position:absolute; z-index:100; top:27px; left:20px; width:450px; height:200px; border:solid black 4px; background-color:#ffffff;\">\n        \u003Cdiv class=\"MessageBar\" id=\"msgbar\">CWC Framework Help and Preferences\u003C/div>\n        \u003Cdiv style=\"position:absolute; top:2px; right:5px; border:solid #000000 1px; padding:2px; font-weight:bold; background-color:#ffffff;\" id=\"fwHelp\">\n         \u003Ca href=\"javascript:parent.cwc_fwHelp(null,null,null);void(0);\" title=\"Close Help\">\n            \u003Cimg src=\"cwc/images/close.gif\" alt=\"Close Help\">\n         \u003C/a>\n        \u003C/div>\n        \u003Cdiv id=\"i_fwHelp\" name=\"i_fwHelp\" scrolling=\"auto\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"position:absolute; top:25px; left:0px; width:450px; height:175px; border:0px; background-color:#ffffff;\">\n        \u003C/div>\n      \u003C/div>\n\n    \n    \u003Cdiv id=\"cwc_main_view\" style=\"position:absolute; z-index:0; top:0px; left:0px; width:100%; height:100%; margin:0px; padding:0px; border:0px;\">\n      \n\n\n    \n    \u003Cinput type=\"hidden\" name=\"messageTimestamp\" id=\"messageTimestamp\" value=\"\">\n    \u003Cdiv id=\"cwc_header\" style=\"height:37px; z-index:1;\">\n\t\u003Ctable border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"applicationMastheadSmall\" id=\"cwc_Masthead\">\n\t\u003Ctbody>\u003Ctr>\n\t\t\u003Ctd class=\"mastheadIcon\" width=\"30\">\n\t\t\t\u003Ca id=\"cwc_masthead_about_link\" href=\"javascript:loadAbout();void(0);\" title=\"About HP Service Manager\">\n\t\t\t\u003Cimg src=\"./cwc/images/backgrounds/header_left.gif\" width=\"30\" height=\"19\" border=\"0\" alt=\"About HP Service Manager\">\n\t\t\t\u003C/a>\n\t\t\u003C/td>\n\t\t\u003Ctd class=\"mastheadTitle\">\n\t\t\t\u003Ca id=\"cwc_masthead_title_link\" title=\"HP Service Manager:7.11.462(462)\">HP Service Manager\u003C/a>\n\t\t\u003C/td>\n\t\t\u003Ctd width=\"307\">\u003Cdiv class=\"mastheadPhoto\">\u003Cimg alt=\"\" src=\"./cwc/images/backgrounds/header_right.jpg\">\u003C/div>\u003C/td>\n\n\t\t\u003Ctd class=\"mastheadLinks\" style=\"display: none; width: 10%;\" id=\"cwc_masthead_links\">\n\t\t      User: \u003Cspan id=\"cwc_masthead_username\">\u003C/span>\n\t\t      \u003Cbr>\n\t\t      \u003C!--\u003Ca href=\"lorem\">Home\u003C/a> | -->\n            \u003Cnobr>\n              \u003Ca href=\"#\" onclick=\"javascript:logoutDialog(logoutMessage);void(0);\" id=\"cwc_masthead_logout_link\">Logout\u003C/a>\n\t\t        &nbsp;&nbsp;\u003Ca href=\"/sm/msm/cns.jsp\" target=\"cns\">HP SaaS Information\u003C/a>\n            \u003C/nobr"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << ">\n        \u003C/td>\n\n\t  \u003C/tr>\n\t  \u003C/tbody>\u003C/table>\n        \u003Ciframe name=\"cns\" style=\"height:0;width:0\" src=\"/sm/msm/blank.html\">\u003C/iframe>\n  \u003C/div>\n\n      \n \n      \n      \n        \u003Cdiv id=\"master\" class=\"tabBackground\" style=\"position:relative; border:0px; overflow:hidden; width:100%; left:0px; top:0px; height:25px; z-index:0; margin:0px;\">\n          \u003Cdiv id=\"cwc_threadtabs\" style=\"position:absolute; white-space:nowrap; height:25px;\">\n\u003Ctable cellpadding=\"0\" cellspacing=\"0\">\n\u003Ctbody>\u003Ctr>\n\u003Ctd class=\"tabSelected\">\n\u003Cdiv>\n\u003Ca title=\"Login\" class=\"tabSelected\">Login\u003C/a>\n\u003C/div>\n\u003C/td>\n\u003C/tr>\n\u003C/tbody>\u003C/table>\n\u003C/div>\n          \u003Cdiv id=\"scrollMain\" style=\"position: absolute; vertical-align: top; top: 0px; right: 2px; z-index: 3; border: 0px; display: none; background-color: rgb(255, 255, 255);\">\n            \u003Cdiv id=\"scrollHorz\" style=\"position:relative; display:none; height:16px; width:36px; border:0px; padding:0px; margin:0px; white-space:nowrap;\">\n              \u003Ca title=\"Scroll Left\" href=\"javascript:void(0)\" onmousedown=\"scrollLayer('cwc_threadtabs',-10,50,2)\" onmouseup=\"stopScroll()\" onmouseout=\"stopScroll()\" style=\"width:16px; height:16px; padding:0px; float:left\">\n                \u003Cimg alt=\"Scroll Left\" src=\"cwc/images/scrollbar/scrollLeft.gif\" style=\"width:16px; height:16px; border:0px; padding:0px; margin:0px\">\n              \u003C/a>\n              \u003Ca title=\"Scroll Right\" href=\"javascript:void(0)\" onmousedown=\"scrollLayer('cwc_threadtabs',-10,50,1)\" onmouseup=\"stopScroll()\" onmouseout=\"stopScroll()\" style=\"width:16px; height:16px; padding:0px;\">\n                \u003Cimg alt=\"Scroll Right\" src=\"cwc/images/scrollbar/scrollRight.gif\" style=\"width:16px; height:16px; border:0px; padding:0px; margin:0px\">\n              \u003C/a>\n            \u003C/div>\n          \u003C/div>\n        \u003C/div>\n      \n\n      \n        \n\n  \n  \n\n\n\n\n\n\u003Cdiv id=\"cwc_R\" style=\"position:absolute; top:0px; left:0px; height:100%; width:100%; z-index:-100;\">\n\u003C/div>\n\n\n\n  \n      \u003Cdiv id=\"cwc_V\" ondblclick=\"collapse_open('cwc_sysnav');\" class=\"FWResizerVert\" style=\"cursor: e-resize; position: absolute; top: 62px; left: 200px; height: 869px; width: 6px; z-index: 40;\">\n      \u003C/div>\n  \n  \n\n\n\u003Cdiv id=\"cwc_fwIF\" style=\"position:relative; z-index:0; top:0px; border:0px; display:block;\">\n  \n  \n      \n      \u003Cdiv id=\"cwc_sysnav\" style=\"position: absolute; border: 0px; z-index: 1; top: 0px; left: 0px; width: 200px; height: 869px; margin: 0px; display: inline;\">\n        \u003Ciframe name=\"navmenu\" id=\"navmenu\" title=\"Navigation Menu\" src=\"cwc/cwc_navmenu.jsp\" scrolling=\"no\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"width:100%; height:100%; margin:0px;\">\n        \u003C/iframe>\n      \u003C/div>\n  \n\n  \u003Cscript type=\"text/javascript\">\n    logoutMessage = \"Are you sure you would like to log out?\";\n  \u003C/script>\n\n  \u003Cdiv id=\"cwc_detail\" style=\"position: absolute; border: 0px; z-index: 0; top: 0px; left: 206px; width: 722px; height: 869px; margin: 0px; display: block;\">\n    \u003Cdiv id=\"cwc_FWTrays\" style=\"position:absolute; z-index:10; top:0px; border:0px;\">\n      \u003C!-- The tool tray is reserved space for the CWC framework.\n           This tray of buttons allows users to customize the framework and get help. -->\n      \u003Cdiv id=\"cwc_toolTray\" class=\"formHeading\" style=\"position: relative; background-color: rgb(255, 255, 255); display: block; top: 0px; left: 0px; width: 722px; height: 25px; border: 0px; margin: 0px; padding: 0px;\">\n        \u003Cdiv id=\"cwc_fName\" class=\"formHeading\" style=\"position:absolute; top:0px; height:23px;\">Login\u003C/div>\n        \u003C!-- div id=\"cwc_FWbuttons\" class=\"formHeading\" style=\"position:absolute; display:inline; right:0px; top:0px; height:23px"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << ";\" -->\n        \u003Cdiv id=\"cwc_FWbuttons\" class=\"cwcToolSprites\">\n          \u003Ca class=\"cwcSkipLinkEnd\" href=\"#\" id=\"cwc_FW_startFWButtons:cwc_SkipLink_end\" name=\"cwc_FW_startFWButtons:cwc_SkipLink_end\">\u003C/a>\n          \u003Ca class=\"cwcSkipLink\" href=\"javascript:cwcSkipNav('cwc_FW_buttons:cwc_SkipLink_end');\" id=\"cwc_FW_buttons:cwc_SkipLink_start\" name=\"cwc_FW_buttons:cwc_SkipLink_start\" title=\"Skip Tool Buttons\">\u003Cimg alt=\"Skip Tool Buttons\" title=\"Skip Tool Buttons\" style=\"border:0px\" src=\"/sm/cwc/images/blank.gif\" width=\"1\" height=\"1\">\u003C/a>\n          \u003Ca class=\"cwcSkipLink\" href=\"javascript:cwcSkipNav('cwc_FW_detail:cwc_SkipLink_end');\" id=\"cwc_FW_detail:cwc_SkipLink_start\" name=\"cwc_FW_detail:cwc_SkipLink_start\" title=\"Skip to Detail\">\u003Cimg alt=\"Skip to Detail\" title=\"Skip to Detail\" style=\"border:0px\" src=\"/sm/cwc/images/blank.gif\" width=\"1\" height=\"1\">\u003C/a>\n          \u003Cdiv id=\"cwc_toolTrayExt\" class=\"cwcToolButton\" style=\"position:relative; left:0px; border:0px;\">\u003C/div>\n          \n            \u003Cdiv class=\"cwcToolSpriteBtn\" onclick=\"cwc_spellcheck();\">\u003Ca id=\"fw_spchk\" class=\"fwSpellDisabled\" disabled=\"disabled\" href=\"javascript:void(0);\" title=\"Spell Check\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Spell Check\">\u003C/a>\u003C/div>\n          \n          \n            \u003Cdiv class=\"cwcToolSpriteBtn\" onclick=\"collapse_open('cwc_sysnav');\">\u003Ca id=\"fw_nav_collapse\" class=\"fwClosenav\" href=\"javascript:void(0);\" title=\"Collapse/Expand Navigator\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Collapse/Expand Navigator\">\u003C/a>\u003C/div>\n          \n          \n          \n          \n            \u003Cdiv class=\"cwcToolSpriteBtn\" onclick=\"cwc_showMessages();\">\u003Ca id=\"cwc_messagesButton\" class=\"fwAlert\" href=\"javascript:void(0);\" title=\"Messages and Alerts\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Messages and Alerts\">\u003C/a>\u003C/div>\n          \n          \n          \n            \u003Cdiv id=\"cwc_printD\" class=\"cwcToolSpriteBtn\" onclick=\"cwc_print('detail');\">\u003Ca class=\"fwPrint\" href=\"javascript:void(0);\" title=\"Print Page\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Print Page\">\u003C/a>\u003C/div>\n            \u003Cdiv id=\"print_list\" class=\"cwcToolSpriteBtn\" style=\"display:none;\" onclick=\"cwc_print('list');\">\u003Ca class=\"fwPrint\" href=\"javascript:void(0);\" title=\"Print Page\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Print Page\">\u003C/a>\u003Cspan class=\"LinkText\">List\u003C/span>\u003C/div>\n            \u003Cdiv id=\"print_listdetail\" class=\"cwcToolSpriteBtn\" style=\"display:none;\" onclick=\"cwc_print('listdetail');\">\u003Ca class=\"fwPrint\" href=\"javascript:void(0);\" title=\"Print Page\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Print Page\">\u003C/a>\u003Cspan class=\"LinkText\">Detail\u003C/span>\u003C/div>\n          \n          \n          \n            \u003Cdiv id=\"cwc_helpButton\" class=\"cwcToolSpriteBtn\" onclick=\"defaultHelp();\">\u003Ca id=\"cwc_helpanchor\" class=\"fwHelp\" href=\"javascript:void(0);\" title=\"Help\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Help\">\u003C/a>\u003C/div>\n          \n          \u003Ca class=\"cwcSkipLinkEnd\" href=\"#\" id=\"cwc_FW_buttons:cwc_SkipLink_end\" name=\"cwc_FW_buttons:cwc_SkipLink_end\">\u003C/a>\n        \u003C/div>\n      \u003C/div>\n\n      \n      \n      \n\n      \n      \n        \u003Cdiv id=\"cwc_MessageTrayContainer\">\n          \u003Ca class=\"cwcSkipLink\" href=\"javascript:cwcSkipNav('cwc_FW_MessageTrayContainer:cwc_SkipLink_end');\" id=\"cwc_FW_MessageTrayContainer:cwc_SkipLink_start\" name=\"cwc_FW_MessageTrayContainer:cwc_SkipLink_start\" title=\"Skip Message Tray\">\u003Cimg alt=\"Skip Message Tray\" title=\"Skip Message Tray\" style=\"border:0px\" src=\"/sm/cwc/images/blank.gif\" width=\"1\" height=\"1\">\u003C/a>\n            \u003Cdiv id=\"cwc_MessageTray\" class=\"messageT"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "ray\" style=\"height: 0px; display: none;\">\u003C/div>\n          \u003Ca class=\"cwcSkipLinkEnd\" href=\"#\" id=\"cwc_FW_MessageTrayContainer:cwc_SkipLink_end\" name=\"cwc_FW_MessageTrayContainer:cwc_SkipLink_end\">\u003C/a>\n        \u003C/div>\n      \n\n      \n      \n      \n        \u003Cdiv id=\"cwc_ButtonTrayContainer\">\n          \u003Ca class=\"cwcSkipLink\" href=\"javascript:cwcSkipNav('cwc_FW_ButtonTrayContainer:cwc_SkipLink_end');\" id=\"cwc_FW_ButtonTrayContainer:cwc_SkipLink_start\" name=\"cwc_FW_ButtonTrayContainer:cwc_SkipLink_start\" title=\"Skip Button Tray\">\u003Cimg alt=\"Skip Button Tray\" title=\"Skip Button Tray\" style=\"border:0px\" src=\"/sm/cwc/images/blank.gif\" width=\"1\" height=\"1\">\u003C/a>\n            \u003Cdiv id=\"cwc_ButtonTray\" style=\"position: absolute; display: inline; left: 0px; width: 722px; top: 25px;\">\n\u003Cdiv style=\"float:right;\">\n\u003Cdiv id=\"cwc_tray_detail_options\" style=\"float:left;\">\n\n\u003C/div>\n\u003C/div>\n\u003C/div>\n          \u003Ca class=\"cwcSkipLinkEnd\" href=\"#\" id=\"cwc_FW_ButtonTrayContainer:cwc_SkipLink_end\" name=\"cwc_FW_ButtonTrayContainer:cwc_SkipLink_end\">\u003C/a>\n        \u003C/div>\n      \n    \u003C/div>\n\n    \n    \u003Cdiv id=\"cwc_detailContent\" style=\"position: absolute; display: inline; border: 0px; z-index: 0; top: 50px; left: 0px; width: 722px; height: 819px; margin: 0px; padding: 0px;\">\n      \u003Ca class=\"cwcSkipLinkEnd\" href=\"#\" id=\"cwc_FW_detail:cwc_SkipLink_end\" name=\"cwc_FW_detail:cwc_SkipLink_end\">\u003C/a>\n      \u003Ciframe name=\"detail\" id=\"detail\" title=\"Detail View\" src=\"cwc/blank.htm\" scrolling=\"auto\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"width:100%; height:100%; margin:0px;\">\n      \u003C/iframe>\n    \u003C/div>\n\n    \n    \n  \u003C/div> \n\u003C/div>\n\n      \n      \n    \u003C/div>\n    \n\n    \n      \n      \u003Ciframe id=\"backchannel\" name=\"backchannel\" title=\"Hidden BackChannel\" src=\"cwc/blank.htm\" scrolling=\"auto\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"display:none; position:absolute; top:0px; left:40px; width:200px; height:0px; z-index:100;\">\n      \u003C/iframe>\n    \n\n    \n    \u003Ciframe id=\"keepaliveframe\" name=\"keepaliveframe\" title=\"Hidden keepalive frame\" src=\"cwc/blank.htm\" scrolling=\"auto\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"display:none; position:absolute; top:0px; left:40px; width:200px; height:0px; z-index:100;\">\n    \u003C/iframe>\n\n    \n      \n      \n\n\n\n  \u003C!-- Telephony Applet -->\n\n\n    \n  \n\n\n\n\u003C/body>\u003C/html>"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26037<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26037<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 11[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 11
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26038<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26038<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":0}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26039<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26039<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Cache-Control: no-cache[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Cache-Control: no-cache
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:141[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:141
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":"\u003Chtml>\u003Chead>\u003C/head>\u003Cbody>\n\u003C/body>\u003C/html>"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26040<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26040<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 11[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 11
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26041<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26041<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":1}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26042<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26042<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Cache-Control: no-cache[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Cache-Control: no-cache
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:6859[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:6859
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":"\u003C!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\u003Chtml>\u003Chead>\n    \u003Ctitle>Navigation Frame\u003C/title>\n    \n    \u003Cscript type=\"text/javascript\" src=\"../js/cwc.min.js\">\u003C/script>\n   \n    \n    \u003Cscript type=\"text/javascript\">\n        var tree;\n        var d_tree = \"nav_menu_container\"   // Navigator tree container\n        var d_fmhead = \"cwcNavHeader\"     // Nav tree header\n        var treeLoaded = false; // true after tree instantiated\n        var idsEnterFolderTitle = \"Enter a title for this folder\";\n        var idsNewFolder = \"New Folder\";\n        var idsEnterDashboardTitle = \"Enter a title for this dashboard\";\n        var idsNewDashboard = \"New Dashboard\";\n        var idsEnterFavoriteTitle = \"Enter a title for this favorite\";\n        var idsCannotCreateFavorite = \"Unable to create a favorite from this screen. Favorites can be created from menu screens, list screens and record detail screens only.\";\n        var idsNavTreeExpand = \"Expand view for options under this link\";\n        var idsNavTreeCollapse = \"Collapse view to hide options under this link\";\n        var sMenuService = top.sMenuService; // servlet mapping for the servlet that populates the tree\n        var isAccessibleMode = false;\n        var isESSMode = false;\n        var favoriteRootId = \"favorites\";\n\n        // navMenuUserAuth is used to ensure NavMenu is loaded only once.\n        var navMenuUserAuth = false;\n\n        // The following are used by xtree.js and cwctree.js\n        var strImagePath = top.strImagePath;\n\n        function onLoad()\n        {\n          coverNavMenuWithGlassPane();\n          genTree('classic');\n          document.onkeyup = cwcKeyHandler;\n          document.onkeypress = stopEventForF1;\n          treeLoaded = true;\n          \n          setTimeout(\"onResize();uncoverNavMenu();\", 50);\n        }\n\n        function onResize()\n        {\n          if (document.body)\n          {\n            var w_hgt = (self.innerHeight) ? self.innerHeight : document.body.offsetHeight;\n            var obj = findObj(d_fmhead);\n            var h_hgt = (obj) ? obj.offsetHeight : 0;\n            obj = findObj(d_tree);\n            if (obj)\n            {\n              obj.style.height = (w_hgt - h_hgt) + \"px\";\n            }\n          }\n        }\n\n        function coverNavMenuWithGlassPane()\n        {\n          var glassPane = getGlassPane();\n          glassPane.display = \"block\";\n        }\n\n        function uncoverNavMenu()\n        {\n          var glassPane = getGlassPane();\n          glassPane.display = \"none\";\n        }\n\n        function getGlassPane()\n        {\n          return document.getElementById(\"nav_menu_glasspane\");\n        }\n    \u003C/script>\n\n    \n    \n    \n      \n      \n        \u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"tree/css/cwc_classicMenu.css\" title=\"cwc_classicMenu\">\n      \n    \n    \n    \n    \u003Cscript type=\"text/javascript\" src=\"../js/tree.min.js\">\u003C/script>\n    \n    \n      \u003Cscript type=\"text/javascript\">\n         /* Opens the favorite manager */\n        function cwc_openFavMgr(){\n          top.document.getElementById(\"navmenu\").src=\"cwc/favMgr/favMgr.jsp?id=\" + encodeURIComponent(favoriteRootId);\n        }\n      \u003C/script>\n    \n\u003C/head>\n\u003Cbody onload=\"onLoad();\" onhelp=\"return event.shiftKey || event.altKey || event.ctrlKey || !defaultHelp();\" marginwidth=\"0\" marginheight=\"0\" style=\"cursor: default;\">\n  \n  \n    \u003Cdiv id=\"cwcNavHeader\" class=\"cwcNavHeader\">\n      \u003Cdiv id=\"cwcNavHeaderContent\" class=\"cwcNavHeaderContent\">\n        \n          \u003Cdiv class=\"cwcNavTitle\">Navigator\u003C/div>\n        \n        \u003Cdiv class=\"cwcNavTools\">\n          \u003Ca href=\"#nav_menu_container\" id=\"skiplink_to_tree\" tabindex=\"147\" title=\"Skip to Tree\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Skip to Tree\" hei"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "ght=\"1\" width=\"1\">\u003C/a>\n          \u003Ca class=\"cwcSkipLink\" href=\"javascript:cwcSkipNav('cwc_FW_startFWButtons:cwc_SkipLink_end');\" id=\"cwc_FW_startFWButtons:cwc_SkipLink_start\" name=\"cwc_FW_startFWButtons:cwc_SkipLink_start\" title=\"Skip to Tool Buttons\">\u003Cimg alt=\"Skip to Tool Buttons\" title=\"Skip to Tool Buttons\" style=\"border:0px\" src=\"/sm/cwc/images/blank.gif\" width=\"1\" height=\"1\">\u003C/a>\n          \n            \u003Cdiv id=\"treerefresh\" class=\"cwcNavSpriteBtn\" onclick=\"refreshNavWindow();\">\u003Ca class=\"fwRefresh\" href=\"javascript:void(0);\" tabindex=\"150\" title=\"Refresh navigation tree\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Refresh\">\u003C/a>\u003C/div>\n          \n          \n          \n            \u003Cdiv id=\"fw_nav_favMgr\" class=\"cwcNavSpriteBtn\" onclick=\"\">\u003Ca class=\"favoritesManage\" href=\"javascript:cwc_openFavMgr();void(0);\" tabindex=\"152\" title=\"Manage Favorites\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Manage Favorites\">\u003C/a>\u003C/div>\n          \n          \n            \u003Cdiv id=\"cwc_favD\" class=\"cwcNavSpriteBtn\" onclick=\"cwc_favorites('detail');\">\u003Ca class=\"favoritesAdd\" href=\"javascript:void(0);\" tabindex=\"153\" title=\"Add Favorite\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Add Favorite\">\u003C/a>\u003C/div>\n            \u003C!-- The following two icons are for saving either the detail or the list part of a list-detail page. -->\n            \u003Cdiv id=\"fav_list\" class=\"cwcNavSpriteBtn\" style=\"display:none;\" onclick=\"cwc_favorites('list');\">\u003Ca class=\"favoritesAdd\" href=\"javascript:void(0);\" tabindex=\"154\" title=\"Add Favorite\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Add Favorite\">\u003C/a>\u003Cspan style=\"margin:0px;padding:0px;\">List\u003C/span>\u003C/div>\n            \u003Cdiv id=\"fav_listdetail\" class=\"cwcNavSpriteBtn\" style=\"display:none;\" onclick=\"cwc_favorites('listdetail');\">\u003Ca class=\"favoritesAdd\" href=\"javascript:void(0);\" tabindex=\"155\" title=\"Add Favorite\">\u003Cimg src=\"/sm/cwc/images/blank.gif\" alt=\"Add Favorite\">\u003C/a>\u003Cspan>Detail\u003C/span>\u003C/div>\n          \n        \u003C/div>\n      \u003C/div>\n      \u003Cdiv class=\"cwcNavSep\">\u003Cimg src=\"/sm/cwc/images/backgrounds/navBackgroundTop.gif\" alt=\"\" style=\"width:100%;height:1px;\">\u003C/div>\n    \u003C/div>\n  \n\n  \u003Cdiv id=\"nav_menu_container\" style=\"width: 100%; overflow: auto; height: 845px;\"> \u003Cul id=\"cwc_navMenuRoot\" class=\"navTreeRoot\">\u003C/ul>\u003C/div>\n  \u003Cdiv id=\"nav_menu_glasspane\" style=\"width:100%; overflow:none; display:none;\">\u003C/div>\n\n  \n\n\n\u003C/body>\u003C/html>"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26043<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26043<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 11[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 11
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26044<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26044<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/frame HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":2}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26045<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26045<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Cache-Control: no-cache[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Cache-Control: no-cache
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:13252[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:13252
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":"\u003C!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\u003C!--\n      Generated by Apache Software Foundation (Xalan XSLTC)-->\u003Chtml class=\"detail/detail\">\u003Chead>\n\u003Cmeta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\u003Cscript type=\"text/JavaScript\">\n    /*SET up global vars*/\n    var tpz_browser = \"GECKO\";\n    var isAccessible = false;\n    var isPreview = false;\n    var isHover = false;\n    var isTelephonyUser = false;\n    var ddeServerName = \"\";\n    var tpz_printTemplates = false;\n    var tpz_dateformat = \"1\";\n    var tpz_autosubmit = \"true\";\n    var tpz_displayMode = \"detail\";\n    var tpz_viewType = \"detail\";\n    var tpz_scForm = \"login.prompt.g\";\n    var tpz_login = \"anonymousUser\";\n    var tpz_operator = \"\";\n    var tpz_formTitle = \"Login\";\n    var tpz_initialRow = \"\";\n    var tpz_showSpellCheck = true;\n    \n    \n    if( !isHover && tpz_displayMode == tpz_viewType && ( window.top.detail.list || window.top.detail.listdetail))\n    {\n        top.cwc_SetCursor(\"wait\");\n        parent.location.href = self.location.href;\n    }\n    \n    \u003C/script>\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"cwc/css/cwc_defaults.css\">\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"cwc/css/cwc_dropmenu.css\">\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"css/topaz.css\">\n\u003Cscript type=\"text/javascript\" src=\"js/cwc.min.js\">\u003C/script>\u003Cscript type=\"text/javascript\" src=\"js/cwc.forceinfw.min.js\">\u003C/script>\u003Cscript type=\"text/javascript\">forceinFW(\"index.do\");\u003C/script>\u003Cscript src=\"js/sm.base.min.js\" type=\"text/javascript\">/**/\u003C/script>\u003Cscript type=\"text/javascript\" src=\"fckeditor/fckeditor.js\">/**/\u003C/script>\u003Cscript type=\"text/javascript\" src=\"htmleditor/inithtmleditor.js\">/**/\u003C/script>\u003Cscript type=\"text/JavaScript\">\u003C/script>\u003Cscript type=\"text/JavaScript\">\n    function dvdRegisterSelect() {\n    \n    }\n  \u003C/script>\n\u003Ctitle>HP Service Manager - Login\u003C/title>\n\u003C/head>\n\u003Cbody id=\"tpz_body\" style=\"width:99%; \" onload=\"tpzOnLoad('login.prompt.g');window.status='login.prompt.g';ContextMenu.setup({'showForms':true});ContextMenu.attach('detail/detail', 'cwc_optionsMenu_detail')\" onfocus=\"window.status='login.prompt.g'\" class=\"GECKO\" marginwidth=\"0\" marginheight=\"0\">\n\u003Cscript type=\"text/JavaScript\">\n    var arReenable = new Array();\n    function enableAll() {return reenableControls(arReenable);}\n  \u003C/script>\u003Cscript type=\"text/JavaScript\">\n    var arField = new Array();\n    var objFields = new Object();\n    function verify( f, bSubmitToSelf ){hpsm.addRequestContext(f); return verifyFields ( bSubmitToSelf,\"\\n\");}\n  \u003C/script>\u003Cscript type=\"text/javascript\">\n    var cellsInLastRows = new Array();\n  \u003C/script>\n\u003Cdiv id=\"MessageTray\" style=\"display: none;\">\n\u003Ca style=\"text-decoration: none;\" href=\"javascript:cwc_showMessages();void(0);\" title=\"title\">\u003Cimg id=\"msg_imgmess\" style=\"display:none; vertical-align:middle;\" alt=\"alt\" title=\"alt\" src=\"cwc/images/msg_info.gif\">\u003Cspan id=\"msg_message\" class=\"MessageText\">\u003C/span>\u003C/a>\n\u003C/div>\n\u003Cdiv id=\"sc_threadlinks\" style=\"display:none;\">\n\u003Ctable cellpadding=\"0\" cellspacing=\"0\">\n\u003Ctbody>\u003Ctr>\n\u003Ctd class=\"tabSelected\">\n\u003Cdiv>\n\u003Ca title=\"Login\" class=\"tabSelected\">Login\u003C/a>\n\u003C/div>\n\u003C/td>\n\u003C/tr>\n\u003C/tbody>\u003C/table>\n\u003C/div>\n\u003Cdiv id=\"ButtonTray\" style=\"display: none;\">\n\u003Cdiv style=\"float:right;\">\n\u003Cdiv id=\"detail_options\" style=\"float:left;\">\u003C/div>\n\u003C/div>\n\u003C/div>\n\u003Cdiv id=\"ButtonTrayOptions\" style=\"display:none\">\n\u003Cdiv id=\"cwc_optionsMenu_btn_detail\" xmlns:js=\"javascript:code\">\n\u003Ca href=\"javascript:top.detail.showHideContext('cwc_options"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Menu_detail');void(0);\">\u003Cimg id=\"cwc_optionsMenu_img\" src=\"images/detail_action.gif\" alt=\"detail\" title=\"Detail Options\">\u003C/a>\n\u003Cdiv id=\"cwc_optionsMenu_detail\">\n\u003Cul id=\"cwc_oM_detail\" class=\"cwc_oM\">\n\u003Cli id=\"subList1\" class=\"optionTitle\">\n\u003Ca href=\"javascript:top.detail.showHideContext('cwc_optionsMenu_detail');void(0);\" title=\"Close Options\">Detail Options\u003Cimg src=\"images/close.gif\" alt=\"Close Options\" title=\"Close Options\" style=\"margin-left:64px;\">\u003C/a>\n\u003C/li>\n\n\n\n\u003C/ul>\n\u003C/div>\n\u003C/div>\n\u003C/div>\n\u003Cscript type=\"text/JavaScript\">\u003C/script>\n\u003Cdiv id=\"view\" style=\"position:relative; padding:0px; margin:0px; z-index:1; min-width:738px;\">\n\u003Cform name=\"topaz\" id=\"topaz\" method=\"post\" action=\"detail.do\" onsubmit=\"enableAll();return verify(this,true);\">\n\u003Cinput type=\"hidden\" name=\"row\" id=\"row\" value=\"\">\u003Cinput type=\"hidden\" name=\"__x\" id=\"tpz_x\">\u003Cinput type=\"hidden\" name=\"thread\" id=\"thread\" value=\"0\">\u003Cinput type=\"hidden\" name=\"event\" id=\"event\" value=\"\">\u003Cinput type=\"hidden\" name=\"transaction\" id=\"transaction\" value=\"0\">\u003Cinput type=\"hidden\" name=\"type\" id=\"type\" value=\"detail\">\u003Cinput type=\"hidden\" name=\"focus\" id=\"focus\" value=\"var/user.id\">\u003Cinput type=\"hidden\" name=\"focusContents\" id=\"focusContents\" value=\"\">\u003Cinput type=\"hidden\" name=\"focusId\" id=\"focusId\" value=\"X2\">\u003Cinput type=\"hidden\" name=\"focusReadOnly\" id=\"focusReadOnly\">\u003Cinput type=\"hidden\" name=\"start\" id=\"start\" value=\"\">\u003Cinput type=\"hidden\" name=\"count\" id=\"count\" value=\"\">\u003Cinput type=\"hidden\" name=\"more\" id=\"more\" value=\"\">\u003Cinput type=\"hidden\" name=\"tablename\" id=\"tablename\" value=\"\">\u003Cinput type=\"hidden\" name=\"window\" id=\"window\" value=\"\">\u003Cinput type=\"hidden\" name=\"close\" id=\"close\" value=\"\">\u003Cinput type=\"hidden\" name=\"_blankFields\" id=\"tpz_blankFields\" value=\"\">\u003Cinput type=\"hidden\" name=\"_uncheckedBoxes\" id=\"tpz_uncheckedBoxes\" value=\"\">\u003Cinput type=\"hidden\" name=\"formchanged\" id=\"formchanged\" value=\"\">\u003Cinput type=\"hidden\" name=\"formname\" id=\"formname\" value=\"login.prompt.g\">\u003Cinput type=\"hidden\" id=\"hdnactivenotes\" value=\"false\">\u003Cinput type=\"hidden\" id=\"hdnrefreshmessages\" value=\"true\">\u003Cinput type=\"hidden\" id=\"hdnrefreshmessinterval\" value=\"15000\">\u003Cinput type=\"hidden\" name=\"_multiSelection\" id=\"tpz_multiSelection\" value=\"\">\u003Cinput type=\"hidden\" name=\"_multiSelection_tableId\" id=\"tpz_multiSelection_tableId\" value=\"\">\u003Cinput type=\"hidden\" id=\"validoptions\" value=\"3;4;\">\u003Cinput type=\"hidden\" id=\"clientWidth\" name=\"clientWidth\" value=\"\">\u003Cscript type=\"text/javascript\">\n    function printThisView(){\n      tpzPrintDetail();\n    }\n  \u003C/script>\u003Cinput type=\"hidden\" id=\"favorites_add\" value=\"ctx=docEngine&amp;file=&amp;query=&amp;queryHash=&amp;action=&amp;title=-\">\u003Cspan id=\"X1\" type=\"label\" style=\"overflow:hidden; position:absolute; white-space:nowrap; top:22px; left:4.8%; width:9.7%; height:19px;  color:#000000;\">\u003Clabel for=\"X2\">Login:\u003C/label>\u003C/span>\n\u003Cdiv id=\"X2Border\" myattrib=\"EditBorder\" style=\"position:absolute;\n      top:22px;\n \t  left:16.4%; \n      \t\n        width:20.7%;\n              \n      height:19px;        \n      \">\n\u003Cinput type=\"text\" id=\"X2\" name=\"var/user.id\" dvdvar=\"\" buttonid=\"Text7\" datatype=\"string\" sctype=\"Text\" tabindex=\"\" style=\"width:100%; height:100%;\" maxlength=\"\" onkeydown=\"lockForm();void(0);\" onfocus=\"handleOnFocus(this, event);\" onchange=\"handleOnChange(this, event);\" onclick=\"handleOnClick(this, event);\" onblur=\"\n    applyToSameControl(this);\n  \" value=\"\" scripttype=\"tex"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "t\">\n\u003C/div>\n\u003Cspan id=\"X3\" type=\"label\" style=\"overflow:hidden; position:absolute; white-space:nowrap; top:22px; left:43.9%; width:56.0%; height:152px; \">\u003C/span>\u003Cspan id=\"X4\" type=\"label\" style=\"overflow:hidden; position:absolute; white-space:nowrap; top:55px; left:4.8%; width:9.7%; height:19px;  color:#000000;\">\u003Clabel for=\"X5\">Password:\u003C/label>\u003C/span>\n\u003Cdiv id=\"X5Border\" myattrib=\"EditBorder\" style=\"position:absolute;\n      top:55px;\n \t  left:16.4%; \n      \t\n        width:20.7%;\n              \n      height:19px;        \n      \">\n\u003Cinput type=\"password\" id=\"X5\" name=\"var/old.password\" dvdvar=\"\" buttonid=\"Text9\" datatype=\"string\" sctype=\"Text\" tabindex=\"\" style=\"width:100%; height:100%;\" maxlength=\"\" onkeydown=\"lockForm();void(0);\" onfocus=\"handleOnFocus(this, event);\" onchange=\"handleOnChange(this, event);\" onclick=\"handleOnClick(this, event);\" onblur=\"\n    applyToSameControl(this);\n  \" value=\"\">\n\u003C/div>\n\u003Cspan id=\"X6\" type=\"label\" style=\"overflow:hidden; position:absolute; white-space:nowrap; top:88px; left:4.8%; width:9.7%; height:19px;  color:#000000;\">\u003Clabel for=\"X7\">Language:\u003C/label>\u003C/span>\n\n\u003Cdiv id=\"X7Border\" cbborder=\"1\" style=\"position:absolute; top:88px; left:16.4%; width:20.7%; height:19px; z-index:200;\">\n\u003Cdiv id=\"X7Edit\" style=\"top:0px;\">\n\u003Cdiv style=\"margin-right:18px;\">\n\u003Cinput type=\"text\" id=\"X7\" value=\"en\" scripttype=\"combo\" tabindex=\"\" datachangeevent=\"\" onkeydown=\"cbKeyDown(event, 'X7');\" dvdvar=\"var/L.language\" buttonid=\"ComboBox11\" reflabels=\"\" onkeyup=\"cbKeyUp(event, 'X7');\" name=\"var/L.language\" maxlength=\"\" selectonly=\"1\" onfocus=\"cbOnFocus(this, event);\" onchange=\"handleOnChange(this, event);\" onclick=\"handleOnClick(this, event);\" onblur=\"cbOnBlur(this, event);\n    applyToSameControl(this);\n  \" style=\"width:100%; height:19px;\">\n\u003C/div>\n\u003Cdiv id=\"X7ButtonDiv\" style=\"margin-top:0px; position:absolute; top:0px; right:0px;\">\n\u003Ca href=\"javascript:cbShow('X7');void(0);\" tabindex=\"\">\u003Cimg id=\"X7Button\" src=\"images/comboup.gif\" alt=\"Expand List\" title=\"Expand List\" style=\"border-style:none; border-width:0px;\">\u003C/a>\n\u003C/div>\n\u003C/div>\n\u003C/div>\n\u003Cinput type=\"hidden\" id=\"X7Hidden\" value=\"en\" style=\"display:none;visibility:hidden;margin:0;padding:0;\">\n\u003Cdiv id=\"X8Border\" style=\"position:absolute;\n      top:143px;\n \t  left:4.8%; \n      \t\n        width:10.3%;\n              \n      height:19px;        \n      \">\n\u003Cinput type=\"button\" name=\"0\" id=\"X8\" buttonid=\"0\" title=\"Login to HP Service Manager\" tabindex=\"\" value=\"Login\" onclick=\"tpzDrillTable('', 'Login', '0', 'listdetail')\" style=\"width:100%; height:100%;\" class=\"cwcButton\">\n\u003C/div>\n\u003Cdiv id=\"X9Border\" style=\"position:absolute;\n      top:143px;\n \t  left:17.6%; \n      \t\n        width:10.3%;\n              \n      height:19px;        \n      \">\n\u003Cinput type=\"button\" name=\"3\" id=\"X9\" buttonid=\"3\" title=\"Exit HP Service Manager\" tabindex=\"\" value=\"Cancel\" onclick=\"tpzDrillTable('', 'Cancel', '3', 'listdetail')\" style=\"width:100%; height:100%;\" class=\"cwcButton\">\n\u003C/div>\n\u003C/form>\n\u003C/div>\n\u003Cdiv id=\"popHelp\" class=\"helpinfo\" style=\"display:none; z-index:200; padding:2px;\">\n\u003Cimg id=\"popHelpImg\" src=\"images/obj16/btnhelp.gif\" style=\"padding:2px; float:left;\" alt=\"Help contents\" title=\"Help contents\">\u003Ca id=\"popHelpClose\" href=\"javascript:hideHelpInfo();void(0);\" title=\"Close help contents\">\u003Cimg id=\"popHelpCloseImg\" src=\"images/close.gif\" alt=\"Close help contents\" title=\"Close help contents\" style=\"padding:2px; float:right;\">\u003C/a>\n\u003C/div>\n\u003C!--************************************************************************************************-->\n\u003C!--The following are the popup selects which get positioned when the users selec"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "ts the popup button-->\n\u003Cdiv id=\"X7Popup_div\" style=\"position:absolute; z-index:500; top:0px; left:0px; display:none; width:20.7%;\">\n\u003Cselect id=\"X7Popup\" onblur=\"cbHide(this.id)\" onclick=\"cbHide(this.id)\" size=\"9\" style=\"width:100%;\">\u003Coption value=\"en\">English\u003C/option>\u003C/select>\u003Cscript type=\"text/JavaScript\">cbShowTextValue(\"X7\");\u003C/script>\n\u003C/div>\n\u003Cscript type=\"text/javascript\">\n    addFieldToArray(arField,objFields,\"X7\",\"var/L.language\",\"false\",\"\");\n  \u003C/script>\n\u003C!--************************************************************************************************-->\u003Cscript type=\"text/javascript\">\u003C/script>\u003Cscript type=\"text/javascript\">\n      // this script registers an editor that is inside a notebook page for Gecko browsers\n    // to be able to enable it when the page becomes visible\n      var arPagesWithEditors = new Array();\n    \u003C/script>\n\n\u003Cxml id=\"commandMessages\" style=\"display:none\">\u003C/xml>\n\n\u003C/body>\u003C/html>"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26046<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26046<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--INFO -com.hp.saas.smc.validator.SMCValidator:Trying to login
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 75[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 75
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"using":"xpath","value":"//input[@name='user.id' or @name='var/user.id']"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:103[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:103
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":{"ELEMENT":"0.40979936835356057-1"}}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26047<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26047<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-1/value HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-1/value HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 55[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-1/value HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 55
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":"0.40979936835356057-1","value":["saas_bpm_mon"]}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26048<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26048<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 53[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 53
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"using":"xpath","value":"//input[@type='password']"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:103[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:103
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":{"ELEMENT":"0.40979936835356057-2"}}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26049<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26049<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-2/value HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-2/value HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 53[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-2/value HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 53
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":"0.40979936835356057-2","value":["123saas456"]}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26050<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26050<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 111[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 111
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"using":"xpath","value":"//input[(@type='button' and @value='Login') or (@type='submit' and @id='loginBtn')]"}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Length:103[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Length:103
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":{"ELEMENT":"0.40979936835356057-3"}}"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26051<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26051<->127.0.0.1:8089 closed
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-3/click HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-3/click HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Content-Length: 30[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> POST /session/aa29d9848dda679c440d8dce3f58980d/element/0.40979936835356057-3/click HTTP/1.1
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Type: application/json; charset=utf-8
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Content-Length: 30
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:09]--DEBUG-org.apache.http.wire: >> "{"id":"0.40979936835356057-3"}"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26052<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26052<->127.0.0.1:8089 closed
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "Cache-Control: no-cache[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:>> GET /session/aa29d9848dda679c440d8dce3f58980d/source HTTP/1.1
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:>> Cache-Control: no-cache
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Content-Length:22103[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Content-Length:22103
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":"\u003C!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\u003C!--\n      Generated by Apache Software Foundation (Xalan XSLTC)-->\u003Chtml class=\"list/list\">\u003Chead>\n\u003Cmeta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\u003Cscript type=\"text/JavaScript\">\n    /*SET up global vars*/\n    var tpz_browser = \"GECKO\";\n    var isAccessible = false;\n    var isPreview = false;\n    var isHover = false;\n    var isTelephonyUser = false;\n    var ddeServerName = \"\";\n    var tpz_printTemplates = false;\n    var tpz_dateformat = \"1\";\n    var tpz_autosubmit = \"true\";\n    var tpz_displayMode = \"detail\";\n    var tpz_viewType = \"list\";\n    var tpz_scForm = \"CCS.sc.manage.ToDo.g\";\n    var tpz_login = \"saas_bpm_mon\";\n    var tpz_operator = \"HP SaaS BPM Monitor\";\n    var tpz_formTitle = \"To Do Queue: My To Do List\";\n    var tpz_initialRow = \"-1\";\n    var tpz_showSpellCheck = true;\n    \n    \n    if( !isHover && tpz_displayMode == tpz_viewType && ( window.top.detail.list || window.top.detail.listdetail))\n    {\n        top.cwc_SetCursor(\"wait\");\n        parent.location.href = self.location.href;\n    }\n    \n    \u003C/script>\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"cwc/css/cwc_defaults.css\">\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"cwc/css/cwc_dropmenu.css\">\n\u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"css/topaz.css\">\n\u003Cscript type=\"text/javascript\" src=\"js/cwc.min.js\">\u003C/script>\u003Cscript type=\"text/javascript\" src=\"js/cwc.forceinfw.min.js\">\u003C/script>\u003Cscript type=\"text/javascript\">forceinFW(\"index.do\");\u003C/script>\u003Cscript src=\"js/sm.base.min.js\" type=\"text/javascript\">/**/\u003C/script>\u003Cscript type=\"text/javascript\" src=\"fckeditor/fckeditor.js\">/**/\u003C/script>\u003Cscript type=\"text/javascript\" src=\"htmleditor/inithtmleditor.js\">/**/\u003C/script>\u003Cscript type=\"text/JavaScript\">\u003C/script>\u003Cscript type=\"text/JavaScript\">\n    function dvdRegisterSelect() {\n    \n    }\n  \u003C/script>\n\u003Ctitle>HP Service Manager - To Do Queue: My To Do List\u003C/title>\n\u003C/head>\n\u003Cbody id=\"tpz_body\" style=\"width:99%; \" onload=\"tpzOnLoad('CCS.sc.manage.ToDo.g');window.status='CCS.sc.manage.ToDo.g';ContextMenu.setup({'showForms':true});ContextMenu.attach('list/list', 'cwc_optionsMenu_list')\" onfocus=\"window.status='CCS.sc.manage.ToDo.g'\" class=\"GECKO\" marginwidth=\"0\" marginheight=\"0\">\n\u003Cscript type=\"text/JavaScript\">\n    var arReenable = new Array();\n    function enableAll() {return reenableControls(arReenable);}\n  \u003C/script>\u003Cscript type=\"text/JavaScript\">\n    var arField = new Array();\n    var objFields = new Object();\n    function verify( f, bSubmitToSelf ){hpsm.addRequestContext(f); return verifyFields ( bSubmitToSelf,\"\\n\");}\n  \u003C/script>\u003Cscript type=\"text/javascript\">\n    var cellsInLastRows = new Array();\n  \u003C/script>\n\u003Cdiv id=\"MessageTray\" style=\"display: none;\">\n\u003Ca style=\"text-decoration: none;\" href=\"javascript:cwc_showMessages();void(0);\" title=\"title\">\u003Cimg id=\"msg_imgmess\" style=\"display: inline; vertical-align: middle;\" alt=\"alt\" title=\"alt\" src=\"images/msg_info.gif\">\u003Cspan id=\"msg_message\" class=\"MessageText\">No records selected\u003C/span>\u003C/a>\n\u003C/div>\n\u003Cdiv id=\"sc_threadlinks\" style=\"display:none;\">\n\u003Ctable cellpadding=\"0\" cellspacing=\"0\">\n\u003Ctbody>\u003Ctr>\n\u003Ctd class=\"tabSelected\">\n\u003Cdiv>\n\u003Ca title=\"To Do Queue: My To Do List\" class=\"tabSelected\">To Do Queue: My To Do List\u003C/a>\n\u003C/div>\n\u003C/td>\n\u003C/tr>\n\u003C/tbody>\u003C/table>\n\u003C/div>\n\u003Cdiv id=\"ButtonTray\" style=\"display: none;\">\n\u003Cdiv style=\"float:right;\">\n\u003Cdiv style=\"float:left; height:25px; overflow:hidden;\">\n\u003Cform name=\"commands\" id=\"commands\" method=\"get\" target=\"detail\" action=\"detail."
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "do\">\n\u003Cinput type=\"text\" id=\"commandLine\" name=\"commandLine\" scripttype=\"text\" style=\"margin:0px; padding:0px; top:-5px;\" tabindex=\"999\">\u003Ca href=\"javascript:document.forms['commands'].submit()\" class=\"FromLinkButton\" title=\"Execute command line function\" tabindex=\"999\">\u003Cimg src=\"images/obj16/command.gif\" alt=\"Execute command line function\" title=\"Execute command line function\">\u003C/a>\n\u003C/form>\n\u003C/div>\n\u003Cdiv id=\"detail_options\" style=\"float:left;\">\u003C/div>\n\u003C/div>\n\u003C/div>\n\u003Cdiv id=\"ButtonTrayOptions\" style=\"display:none\">\n\u003Cdiv id=\"cwc_optionsMenu_btn_list\" xmlns:js=\"javascript:code\">\n\u003Ca href=\"javascript:top.detail.showHideContext('cwc_optionsMenu_list');void(0);\">\u003Cimg id=\"cwc_optionsMenu_img\" src=\"images/list_action.gif\" alt=\"list\" title=\"List Options\">\u003C/a>\n\u003Cdiv id=\"cwc_optionsMenu_list\">\n\u003Cul id=\"cwc_oM_list\" class=\"cwc_oM\">\n\u003Cli id=\"subList1\" class=\"optionTitle\">\n\u003Ca href=\"javascript:top.detail.showHideContext('cwc_optionsMenu_list');void(0);\" title=\"Close Options\">List Options\u003Cimg src=\"images/close.gif\" alt=\"Close Options\" title=\"Close Options\" style=\"margin-left:64px;\">\u003C/a>\n\u003C/li>\n\u003Cli class=\"sub_subgroup\" id=\"breakdowns1\">\n\u003Ca href=\"javascript:void(0);\">\u003Cimg src=\"images/calPrev.gif\" style=\"margin-left:2px;\" alt=\"Chart by field count\" title=\"Chart by field count\">&nbsp;&nbsp;Chart by field count\u003C/a>\n\u003Cul>\n\u003Cli id=\"chart1\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('aggregate', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/record.id', 'f2b76bf1');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">ID\u003C/a>\n\u003C/li>\n\u003Cli id=\"chart3\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('aggregate', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/status', '99e94912');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Status\u003C/a>\n\u003C/li>\n\u003Cli id=\"chart4\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('aggregate', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/description', 'f24b9480');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Description\u003C/a>\n\u003C/li>\n\u003Cli id=\"chart5\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('aggregate', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/target.date', '3c9b3c12');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Target Date\u003C/a>\n\u003C/li>\n\u003C/ul>\n\u003C/li>\n\u003Cli class=\"sub_subgroup\" id=\"breakdowns1\">\n\u003Ca href=\"javascript:void(0);\">\u003Cimg src=\"images/calPrev.gif\" style=\"margin-left:2px;\" alt=\"Chart by field value\" title=\"Chart by field value\">&nbsp;&nbsp;Chart by field value\u003C/a>\n\u003Cul>\n\u003Cli id=\"chart1\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('query', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/record.id', 'f2b76bf1');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">ID\u003C/a>\n\u003C/li>\n\u003Cli id=\"chart3\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('query', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/status', '99e94912');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Status\u003C/a>"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "\n\u003C/li>\n\u003Cli id=\"chart4\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('query', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/description', 'f24b9480');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Description\u003C/a>\n\u003C/li>\n\u003Cli id=\"chart5\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzGenerateChart('query', 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22', 'instance/target.date', '3c9b3c12');void(0);\">&nbsp;&nbsp;\u003Cimg src=\"images/spacer.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Target Date\u003C/a>\n\u003C/li>\n\u003C/ul>\n\u003C/li>\n\n\n\n\u003Cli id=\"sub6\" img=\"tmass_up\" value=\"207\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('207',null,'detail');void(0);\" origcaption=\"Mass Update\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tmass_up.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Mass Update\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub8\" img=\"tnew\" value=\"800\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('800',null,'detail');void(0);\" origcaption=\"New\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tnew.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">New\u003C/a>\n\u003C/li>\n\n\n\u003Cli id=\"sub12\" img=\"trefresh\" value=\"820\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('820',null,'detail');void(0);\" origcaption=\"Refresh\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/trefresh.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Refresh\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub14\" img=\"tuse_sto\" value=\"835\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('835',null,'detail');void(0);\" origcaption=\"Use Stored Query\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tuse_sto.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Use Stored Query\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub16\" img=\"tstartin\" value=\"840\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('840',null,'detail');void(0);\" origcaption=\"Starting Lists\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tstartin.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Starting Lists\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub18\" img=\"tcustomi\" value=\"900\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('900',null,'detail');void(0);\" origcaption=\"Customize Current View\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tcustomi.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Customize Current View\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub20\" img=\"tdefine\" value=\"901\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('901',null,'detail');void(0);\" origcaption=\"Define Views\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tdefine.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Define Views\u003C/a>\n\u003C/li>\n\n\n\n\u003Cli id=\"sub26\" img=\"texport\" value=\"@value\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('5150',null,'detail');void(0);\" origcaption=\"Export to Text File\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/texport.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Export to Text File\u003C/a>\n\u003C/li>\n\n\u003Cli id=\"sub28\" img=\"tchange\" value=\"@value\">\n\u003Ca href=\"javascript:showHideOptions('cwc_optionsMenu');top.detail.tpzExecute('5170',null,'detail');void(0);\" origcaption=\"Change Password\">&nbsp;&nbsp;\u003Cimg src=\"images/obj16/tchange.gif\" alt=\"\" title=\"\" align=\"middle\" style=\"padding-right:2px;\">Change Password\u003C/a>\n\u003C/li>\n\n\u003C/ul>\n\u003C/div>\n\u003C/div>\n\u003C/div>\n\u003Cscript type=\"text/Java"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "Script\">\n        updateClientSideState(true, tpz_login);\n      \u003C/script>\n\u003Cdiv id=\"view\" style=\"position:relative; padding:0px; margin:0px; z-index:1;\">\n\u003Cform name=\"topaz\" id=\"topaz\" method=\"post\" action=\"detail.do\" onsubmit=\"enableAll();return verify(this,true);\">\n\u003Cinput type=\"hidden\" name=\"row\" id=\"row\" value=\"\">\u003Cinput type=\"hidden\" name=\"__x\" id=\"tpz_x\">\u003Cinput type=\"hidden\" name=\"thread\" id=\"thread\" value=\"0\">\u003Cinput type=\"hidden\" name=\"event\" id=\"event\" value=\"\">\u003Cinput type=\"hidden\" name=\"transaction\" id=\"transaction\" value=\"1\">\u003Cinput type=\"hidden\" name=\"type\" id=\"type\" value=\"list\">\u003Cinput type=\"hidden\" name=\"focus\" id=\"focus\" value=\"\">\u003Cinput type=\"hidden\" name=\"focusContents\" id=\"focusContents\" value=\"\">\u003Cinput type=\"hidden\" name=\"focusId\" id=\"focusId\" value=\"\">\u003Cinput type=\"hidden\" name=\"focusReadOnly\" id=\"focusReadOnly\" value=\"\">\u003Cinput type=\"hidden\" name=\"start\" id=\"start\" value=\"0\">\u003Cinput type=\"hidden\" name=\"count\" id=\"count\" value=\"0\">\u003Cinput type=\"hidden\" name=\"more\" id=\"more\" value=\"0\">\u003Cinput type=\"hidden\" name=\"tablename\" id=\"tablename\" value=\"Todo\">\u003Cinput type=\"hidden\" name=\"window\" id=\"window\" value=\"\">\u003Cinput type=\"hidden\" name=\"close\" id=\"close\" value=\"\">\u003Cinput type=\"hidden\" name=\"_blankFields\" id=\"tpz_blankFields\" value=\"\">\u003Cinput type=\"hidden\" name=\"_uncheckedBoxes\" id=\"tpz_uncheckedBoxes\" value=\"\">\u003Cinput type=\"hidden\" name=\"formchanged\" id=\"formchanged\" value=\"\">\u003Cinput type=\"hidden\" name=\"formname\" id=\"formname\" value=\"CCS.sc.manage.ToDo.g\">\u003Cinput type=\"hidden\" id=\"hdnactivenotes\" value=\"false\">\u003Cinput type=\"hidden\" id=\"hdnrefreshmessages\" value=\"true\">\u003Cinput type=\"hidden\" id=\"hdnrefreshmessinterval\" value=\"15000\">\u003Cinput type=\"hidden\" name=\"_multiSelection\" id=\"tpz_multiSelection\" value=\"\">\u003Cinput type=\"hidden\" name=\"_multiSelection_tableId\" id=\"tpz_multiSelection_tableId\" value=\"\">\u003Cinput type=\"hidden\" id=\"validoptions\" value=\"51;52;207;800;817;820;835;840;900;901;999;1000;5150;5170;\">\u003Cinput type=\"hidden\" id=\"clientWidth\" name=\"clientWidth\" value=\"\">\u003Cscript type=\"text/javascript\">\n    function printThisView(){\n      tpzPrintList();\n    }\n  \u003C/script>\u003Cinput type=\"hidden\" id=\"favorites_add\" value=\"ctx=docEngine&amp;file=Todo&amp;query=assignee%3D%22saas_bpm_mon%22&amp;queryHash=cf374fa6&amp;action=&amp;title=Todo-assignee%3D%22saas_bpm_mon%22\">\u003Cscript src=\"js/sm.min.js\" type=\"text/javascript\">/**/\u003C/script>\u003Cscript type=\"text/javascript\">\n        fullPageCount = 32;ContextMenu.setup({'showForms':true});ContextMenu.attach('TableResults recordlist', 'cwc_optionsMenu_list');\n    \u003C/script>\u003Cscript type=\"text/javascript\">\n        invokeOnPageLoad(\"callBackChannelCallback();\");\n      \u003C/script>\u003Cinput type=\"hidden\" id=\"tablename\" value=\"{@file}\">\n\u003Cdiv id=\"X1\" style=\"position: absolute; top: 0px; left: 0%; height: 597px; width: 100%;\">\n\u003Cdiv id=\"innertable\" style=\"height: 566px;\" class=\"scrollTableContainer TableInside\">\n\u003Ctable id=\"X1:recordlist\" class=\"TableResults recordlist\" cellspacing=\"0\" cellpadding=\"0\" groups=\"false\" count=\"0\" record=\"-1\">\n\u003Ccolgroup>\u003Ccol width=\"1%\">\n\u003Ccol width=\"%\">\n\u003Ccol width=\"%\">\n\u003Ccol width=\"%\">\n\u003Ccol width=\"%\">\n\u003Ccol width=\"%\">\n\u003Ccol>\n\u003C/colgroup>\u003Cthead id=\"tableheader\" class=\"fixedHeader\">\n\u003Ctr>\n\u003Cth class=\"TableHeading\" width=\"15\" style=\"padding-left:8;\" title=\"Selection Marker\">\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_1\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/record.id','detail');void(0);\" style=\"text-decoration:none;\" title=\"ID\">\u003Cspan class=\"TableHeadingText\" id=\"X2\">ID\u"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "003C/span>\u003C/a>\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_2\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/itemType','detail');void(0);\" style=\"text-decoration:none;\" title=\"Module\">\u003Cspan class=\"TableHeadingText\" id=\"X4\">Module\u003C/span>\u003C/a>\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_3\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/status','detail');void(0);\" style=\"text-decoration:none;\" title=\"Status\">\u003Cspan class=\"TableHeadingText\" id=\"X17\">Status\u003C/span>\u003C/a>\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_4\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/description','detail');void(0);\" style=\"text-decoration:none;\" title=\"Description\">\u003Cspan class=\"TableHeadingText\" id=\"X19\">Description\u003C/span>\u003C/a>\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_5\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/target.date','detail');void(0);\" style=\"text-decoration:none;\" title=\"Target Date\">\u003Cspan class=\"TableHeadingText\" id=\"X21\">Target Date\u003C/span>\u003C/a>\u003C/th>\u003Cth class=\"TableHeading\" id=\"col_6\" name=\"\">\u003Ca href=\"javascript:tpzExecute('1000','instance/priority','detail');void(0);\" style=\"text-decoration:none;\" title=\"Priority\">\u003Cspan class=\"TableHeadingText\" id=\"X23\">Priority\u003C/span>\u003C/a>\u003C/th>\n\u003C/tr>\n\u003C/thead>\n\u003Ctbody id=\"scrollableBody\" name=\"Table0\">\u003C/tbody>\n\u003C/table>\n\u003C/div>\n\u003Ctable class=\"recordlistfooter\">\n\u003Ctfoot id=\"fixedtablefoot\">\n\u003Ctr class=\"TableNavigationRow\" style=\"width:100%;\">\n\u003Ctd>\n\u003Cdiv class=\"sm_tablePaging\">\n\u003Cdiv class=\"recordCount\">\n\u003Clabel labelfor=\"countField\" style=\"width:40; height:18; margin-left:4px; margin-top:4px\">Records:\u003C/label>\u003Clabel id=\"countField\" style=\"text-align:right; width:40; height:18; margin-left:4px; margin-top:4px; border:0px;\">0\u003C/label>\u003Cinput type=\"button\" value=\"Count\" style=\"width:80px; height:20px; margin-left:10px;\" onclick=\"getRecordCount('Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22')\">\n\u003C/div>\n\u003Cdiv class=\"pageRange\">&nbsp;\u003Clabel id=\"pageinfo\" style=\"margin-left:4px; margin-right:4px; margin-top:4px; border:0px;\">Page: 0 of 0\u003C/label>&nbsp;\u003C/div>\n\u003Cdiv class=\"goToPage\">\n\u003Clabel for=\"pagenumber\">Go to page:\u003C/label>\u003Cinput id=\"pagenumber\" type=\"text\" style=\"width:40px; height:19px; margin-left:4px; border:1px;\" onclick=\"goToPageOnclick(event)\" onkeydown=\"goToPageKeyDown(event, 'Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22');\" onkeyup=\"goToPageKeyUp(event);\">\u003Cinput id=\"pagenumberbutton\" type=\"button\" value=\"Go\" style=\"width:80px; height:20px; margin-left:4px;\" onclick=\"goToPage('Todo', 'assignee$$p3D$$p22saas_bpm_mon$$p22')\" disabled=\"true\">\n\u003C/div>\n\u003C/div>\n\u003C/td>\n\u003C/tr>\n\u003C/tfoot>\n\u003C/table>\n\u003Cscript type=\"text/javascript\">\n        tpzInitTable();\n    \u003C/script>\n\u003C/div>\n\u003Cspan id=\"X29\" type=\"label\" style=\"overflow:hidden; position:absolute; white-space:nowrap; top:66px; left:11.1%; width:12.3%; height:19px; \">\u003C/span>\n\u003C/form>\n\u003C/div>\n\u003Cdiv id=\"popHelp\" class=\"helpinfo\" style=\"display:none; z-index:200; padding:2px;\">\n\u003Cimg id=\"popHelpImg\" src=\"images/obj16/btnhelp.gif\" style=\"padding:2px; float:left;\" alt=\"Help contents\" title=\"Help contents\">\u003Ca id=\"popHelpClose\" href=\"javascript:hideHelpInfo();void(0);\" title=\"Close help contents\">\u003Cimg id=\"popHelpCloseImg\" src=\"images/close.gif\" alt=\"Close help contents\" title=\"Close help contents\" style=\"padding:2px; float:right;\">\u003C/a>\n\u003C/div>\n\u003C!--************************************************************************************************-->\n\u003C!--The following are the popup selects which get positioned when the users selects the popup button-->\n\u003Cdiv id=\"X5Popup_div\" style=\""
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.wire: << "position:absolute; z-index:500; top:0px; left:0px; display:none; width:%;\">\n\u003Cselect id=\"X5Popup\" onblur=\"cbHide(this.id)\" onclick=\"cbHide(this.id)\" size=\"8\" style=\"width:100%;\">\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003C/select>\u003Cscript type=\"text/JavaScript\">cbShowTextValue(\"X5\");\u003C/script>\n\u003C/div>\n\u003Cdiv id=\"X24Popup_div\" style=\"position:absolute; z-index:500; top:0px; left:0px; display:none; width:%;\">\n\u003Cselect id=\"X24Popup\" onblur=\"cbHide(this.id)\" onclick=\"cbHide(this.id)\" size=\"8\" style=\"width:100%;\">\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003Coption value=\"\">\u003C/option>\u003C/select>\u003Cscript type=\"text/JavaScript\">cbShowTextValue(\"X24\");\u003C/script>\n\u003C/div>\n\u003C!--************************************************************************************************-->\n\u003Cscript type=\"text/javascript\">\u003C/script>\u003Cscript type=\"text/javascript\">\n      // this script registers an editor that is inside a notebook page for Gecko browsers\n    // to be able to enable it when the page becomes visible\n      var arPagesWithEditors = new Array();\n    \u003C/script>\n\n\u003Cxml id=\"commandMessages\" style=\"display:none\">\u003C/xml>\n\n\u003C/body>\u003C/html>"}"
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26057<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26057<->127.0.0.1:8089 closed
+[01/03/2014 20:26:17]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Get connection: {}->http://localhost:8089, timeout = 120000
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:[{}->http://localhost:8089] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:No free connections [{}->http://localhost:8089][null]
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Available capacity: 2000 out of 2000 [{}->http://localhost:8089][null]
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Creating new connection [{}->http://localhost:8089]
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.DefaultClientConnectionOperator:Connecting to localhost:8089
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.client.protocol.RequestAddCookies:CookieSpec selected: best-match
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.client.protocol.RequestAuthCache:Auth cache not set in the context
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.client.protocol.RequestTargetAuthentication:Target auth state: UNCHALLENGED
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.client.protocol.RequestProxyAuthentication:Proxy auth state: UNCHALLENGED
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.client.DefaultHttpClient:Attempt 1 to execute request
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Sending request: DELETE /session/aa29d9848dda679c440d8dce3f58980d HTTP/1.1
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: >> "DELETE /session/aa29d9848dda679c440d8dce3f58980d HTTP/1.1[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: >> "Accept: application/json, image/png[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: >> "Host: localhost:8089[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: >> "Connection: Keep-Alive[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: >> "[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:>> DELETE /session/aa29d9848dda679c440d8dce3f58980d HTTP/1.1
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:>> Accept: application/json, image/png
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:>> Host: localhost:8089
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:>> Connection: Keep-Alive
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "HTTP/1.1 200 OK[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "Content-Length:72[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "Content-Type:application/json; charset=utf-8[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "Connection:close[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "[\r][\n]"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Receiving response: HTTP/1.1 200 OK
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:<< HTTP/1.1 200 OK
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:<< Content-Length:72
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:<< Content-Type:application/json; charset=utf-8
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.headers:<< Connection:close
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.wire: << "{"sessionId":"aa29d9848dda679c440d8dce3f58980d","status":0,"value":null}"
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26058<->127.0.0.1:8089 shut down
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:Released connection is not reusable.
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Releasing connection [{}->http://localhost:8089][null]
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.DefaultClientConnection:Connection 0.0.0.0:26058<->127.0.0.1:8089 closed
+[01/03/2014 20:26:18]--DEBUG-org.apache.http.impl.conn.tsccm.ConnPoolByRoute:Notifying no-one, there are no waiting threads
